@@ -1,3 +1,106 @@
+/* Fonts:
+font-family: 'Corinthia', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Roboto', sans-serif;
+Colors:
+Dark Blue: rgb(54, 54, 157); */
+
+
+
+
+
+
+
+
 body{
     background-color: azure;
+}
+
+main{
+    width: 100vw;
+    height: 90vh;
+    background-image:url(../img/winter-cropped_altered.png);
+    background-size:cover;
+    background-position: bottom left;
+}
+
+h1 {
+    font-family: 'Corinthia', cursive;
+    font-size: 9em;
+    text-align: center;
+    padding-top: 3%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px black;
+}
+
+h2{
+    font-family: 'Handlee', cursive;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 3%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px black;
+}
+
+
+.secondary{
+    width: 100vw;
+    height: 90vh;
+    background-image:url(../img/no_village_winter.png);
+    background-size:auto;
+    background-position: bottom right;
+
+}
+
+footer{
+    background-color: white;
+    color: rgb(54, 54, 157);
+    position:fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 10%;
+}
+
+ul{
+    display: flex;
+    padding-bottom: 1em;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+
+}
+
+li{
+    font-family: 'Handlee', cursive;
+    font-size: 2em;
+padding: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+.navBar{
+    display: flex;
+}
+
+.navCartContainer{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    padding: 1em;
+
+}
+.navCartContainer div{
+    background-color: rgb(30, 79, 144);
+    margin-top: -15px;
+    margin-left: 1em;
+    padding: 10px;
+    border-radius: 20px;
+    color: whitesmoke;
+    box-shadow: 1px 1px 5px 2px black;
+
 }
