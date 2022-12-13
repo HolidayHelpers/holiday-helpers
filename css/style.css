@@ -88,6 +88,14 @@ h2{
     padding-top: 10em;
 }
 
+.snowmen div{
+    max-height: 40vh;
+}
+
+.snowmen div img{
+    max-height: 40vh;
+}
+
 
 footer{
     background-color: white;
