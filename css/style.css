@@ -3,7 +3,7 @@ font-family: 'Corinthia', cursive;
 font-family: 'Handlee', cursive;
 font-family: 'Roboto', sans-serif;
 Colors:
-Dark Blue: rgb(54, 54, 157); */
+Dark Blue background color: rgb(30, 83, 140); */
 
 
 
@@ -14,6 +14,10 @@ Dark Blue: rgb(54, 54, 157); */
 
 body{
     background-color: azure;
+}
+
+header{
+    background-color:  rgb(30, 83, 140);
 }
 
 main{
@@ -50,6 +54,15 @@ h2{
     background-size:auto;
     background-position: bottom right;
 
+}
+
+.secondary h2{
+    font-family: 'Handlee', cursive;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 0%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px black;
 }
 
 footer{
@@ -90,17 +103,18 @@ a:hover{
 .navCartContainer{
     display: flex;
     font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    padding: 1em;
+    font-size: 1em;
+    padding: 1%;
+    justify-content: right;
 
 }
 .navCartContainer div{
-    background-color: rgb(30, 79, 144);
-    margin-top: -15px;
+    background-color: white;
+    /* margin-top: 5px; */
     margin-left: 1em;
     padding: 10px;
     border-radius: 20px;
-    color: whitesmoke;
-    box-shadow: 1px 1px 5px 2px black;
+    color: rgb(30, 83, 140);
+    /* box-shadow: 1px 1px 5px 2px black; */
 
 }
