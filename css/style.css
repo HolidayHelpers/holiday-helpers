@@ -3,7 +3,7 @@ font-family: 'Corinthia', cursive;
 font-family: 'Handlee', cursive;
 font-family: 'Roboto', sans-serif;
 Colors:
-Dark Blue background color: rgb(30, 83, 140); */
+Dark Blue background color: rgb(20, 83, 141); */
 
 
 
@@ -17,7 +17,7 @@ body{
 }
 
 header{
-    background-color:  rgb(30, 83, 140);
+    background-color:  rgb(20, 83, 141);
 }
 
 main{
@@ -65,9 +65,26 @@ h2{
     text-shadow: 2px 2px 3px black;
 }
 
+.about-us{
+    width: 100vw;
+    height: 90vh;
+    background-image:url(../img/aboutUs/blank_village.png);
+    background-size:auto;
+    background-position: bottom right;
+}
+.about-us h2{
+    font-family: 'Handlee', cursive;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 1%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px black;
+}
+
+
 footer{
     background-color: white;
-    color: rgb(54, 54, 157);
+    color: rgb(20, 83, 141);
     position:fixed;
     bottom: 0%;
     width: 100%;
@@ -114,7 +131,7 @@ a:hover{
     margin-left: 1em;
     padding: 10px;
     border-radius: 20px;
-    color: rgb(30, 83, 140);
+    color: rgb(20, 83, 141);
     /* box-shadow: 1px 1px 5px 2px black; */
 
 }
