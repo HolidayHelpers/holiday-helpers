@@ -35,6 +35,7 @@ Eva Grace Smith
 - As an organization, I’d like to see the percent of people “matched” or needs fulfilled
 - As an organization, I’d like to a visual representation of the status of needs available and needs met
 
+Wireframe and Domain Modeling Image is found within the repository, filename is "HolidayHelpers.drawio"
 
 
 Background Photo credit:  
