@@ -32,7 +32,7 @@ h1 {
     font-family: 'Corinthia', cursive;
     font-size: 9em;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 1%;
     color: whitesmoke;
     text-shadow: 2px 2px 3px black;
 }
@@ -41,7 +41,7 @@ h2{
     font-family: 'Handlee', cursive;
     font-size: 4em;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 2%;
     color: whitesmoke;
     text-shadow: 2px 2px 3px black;
 }
@@ -64,7 +64,7 @@ h2{
     color: whitesmoke;
     text-shadow: 2px 2px 3px black;
 }
-
+/* **********************ABOUT US*********************** */
 .about-us{
     width: 100vw;
     height: 90vh;
@@ -79,6 +79,13 @@ h2{
     padding-top: 1%;
     color: whitesmoke;
     text-shadow: 2px 2px 3px black;
+}
+
+.snowmen{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+    padding-top: 10em;
 }
 
 
