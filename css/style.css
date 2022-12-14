@@ -3,7 +3,7 @@ font-family: 'Corinthia', cursive;
 font-family: 'Handlee', cursive;
 font-family: 'Roboto', sans-serif;
 Colors:
-Dark Blue: rgb(54, 54, 157); */
+Dark Blue background color: rgb(20, 83, 141); */
 
 
 
@@ -14,6 +14,10 @@ Dark Blue: rgb(54, 54, 157); */
 
 body{
     background-color: azure;
+}
+
+header{
+    background-color:  rgb(20, 83, 141);
 }
 
 main{
@@ -28,7 +32,7 @@ h1 {
     font-family: 'Corinthia', cursive;
     font-size: 9em;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 1%;
     color: whitesmoke;
     text-shadow: 2px 2px 3px black;
 }
@@ -37,7 +41,7 @@ h2{
     font-family: 'Handlee', cursive;
     font-size: 4em;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 2%;
     color: whitesmoke;
     text-shadow: 2px 2px 3px black;
 }
@@ -52,11 +56,53 @@ h2{
 
 }
 
+.secondary h2{
+    font-family: 'Handlee', cursive;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 0%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px black;
+}
+/* **********************ABOUT US*********************** */
+.about-us{
+    width: 100vw;
+    height: 90vh;
+    background-image:url(../img/aboutUs/blank_village.png);
+    background-size:auto;
+    background-position: bottom right;
+}
+.about-us h2{
+    font-family: 'Handlee', cursive;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 3%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px black;
+}
+
+.snowmen{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+    padding-top: 10em;
+}
+
+.snowmen div{
+    max-height: 40vh;
+}
+
+.snowmen div img{
+    max-height: 40vh;
+}
+
+
 footer{
     background-color: white;
-    color: rgb(54, 54, 157);
+    color: rgb(20, 83, 141);
     position:fixed;
     bottom: 0%;
+    padding-bottom: 2em;
     width: 100%;
     height: 10%;
 }
@@ -90,17 +136,18 @@ a:hover{
 .navCartContainer{
     display: flex;
     font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    padding: 1em;
+    font-size: 1em;
+    padding: 1%;
+    justify-content: right;
 
 }
 .navCartContainer div{
-    background-color: rgb(30, 79, 144);
-    margin-top: -15px;
+    background-color: white;
+    /* margin-top: 5px; */
     margin-left: 1em;
     padding: 10px;
     border-radius: 20px;
-    color: whitesmoke;
-    box-shadow: 1px 1px 5px 2px black;
+    color: rgb(20, 83, 141);
+    /* box-shadow: 1px 1px 5px 2px black; */
 
 }
