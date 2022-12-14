@@ -14,22 +14,34 @@ console.log ('Hello from the hand js file');
 
 let handClicks = 0;
 
-let handImage1 = document.querySelector('.handImage1 img');
-let handImage2 = document.querySelector('.handImage2 img');
-let handImage3 = document.querySelector('.handImage3 img');
-let handImage4 = document.querySelector('.handImage4 img');
-let handImage5 = document.querySelector('.handImage5 img');
-let handImage6 = document.querySelector('.handImage6 img');
-let handImage7 = document.querySelector('.handImage7 img');
-let handImage8 = document.querySelector('.handImage8 img');
-let handImage9 = document.querySelector('.handImage9 img');
+let handImage1 = document.getElementsByTagName('.handImage1 img');
+let handImage2 = document.getElementsByTagName('.handImage2 img');
+let handImage3 = document.getElementsByTagName('.handImage3 img');
+let handImage4 = document.getElementsByTagName('.handImage4 img');
+let handImage5 = document.getElementsByTagName('.handImage5 img');
+let handImage6 = document.getElementsByTagName('.handImage6 img');
+let handImage7 = document.getElementsByTagName('.handImage7 img');
+let handImage8 = document.getElementsByTagName('.handImage8 img');
+let handImage9 = document.getElementsByTagName('.handImage9 img');
 
 
-// document querySelectors
+// document getElementsByTagName
 // create array
 
 // function for handling click events
+function handleProductClick(event) {
+    console.log('click event happening' , event);
+    if(event.target === productContainer){
+      alert('please click on a product');
+    }
 // what is available when hovering on image?
+// idea to toggle image on/off
+// var list = document.querySelectorAll("li");
+// for(var i = 0; i < list.length; i++) {
+//    list[i].addEventListener("click", function(e){
+//     e.currentTarget.classList.toggle("done");
+//    })
+//  }
 // determine if button functionality will work?
 
 // function to render results - chart
