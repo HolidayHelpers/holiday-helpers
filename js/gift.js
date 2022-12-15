@@ -27,7 +27,18 @@ function GiftItems(imageSrc, giftDescription, click){
 
 //we need our gift images and descriptions here,
 new GiftItems('../img/aboutUs/snowmanApron.png', 'This is a description of this gift. What it is. Who it is for. Their age, etc');
+new GiftItems('../img/Gifts/books.jpg');
+new GiftItems('../img/Gifts/boots.jpg');
+new GiftItems('../img/Gifts/clothing.jpg');
+new GiftItems('../img/Gifts/coatsAccessories.jpg');
+new GiftItems('../img/Gifts/gas.jpg');
+new GiftItems('../img/Gifts/groceries.jpg');
+new GiftItems('../img/Gifts/household.jpg');
+new GiftItems('../img/Gifts/petSupplies.jpg');
+new GiftItems('../img/Gifts/toys.jpg');
+
 // need  more images and descriptions
+
 
 
 function renderGifts(){
