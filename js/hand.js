@@ -6,17 +6,21 @@ console.log ('Hello from the hand js file');
 // respond to a click of the handImage.
 
 
-
+let giftClicks = localStorage.getItem('giftCount');
 let handClicks = localStorage.getItem('handCount');
 // create array
 let allHandArray= [];
 let handSection = document.getElementById ('handPhotos');
 // We need a count tally on the <section class="navCartContainer"> divs Hands and Acts.
 let handCountDiv = document.getElementById ('handCount');
+let giftCountDiv = document.getElementById ('giftCount');
+handCountDiv.innerText=`Hands ${handClicks}`;
+giftCountDiv.innerText=`Gifts ${giftClicks}`;
 
-function HandItems(imageSrc, handDescription, click){
+function HandItems(imageSrc, handDescription, handHoverDescription, click){
   this.handImageSrc=imageSrc;
   this.handDescription=handDescription;
+  this.handHoverDescription=handHoverDescription;
   if(click){
     this.click=click;
   } else{
@@ -26,13 +30,13 @@ function HandItems(imageSrc, handDescription, click){
 }
 
 //we need our hand images and descriptions here,
-new HandItems('../img/hand/grocery-cart.jpeg', '');
+new HandItems('../img/hand/grocery-cart.jpeg', 'Grocery Shopping', 'Everyone needs to get groceries, but for some people the task is harder than for others. This is a moderate activity, a list will be provided. Allow around an hour for this task.' );
 new HandItems('../img/hand/guy-reading.jpg', '');
 new HandItems('../img/hand/haircut.jpg', '');
 new HandItems('../img/hand/lawn-mower.jpg', '');
 new HandItems('../img/hand/pet-a-dog.jpg', '');
 new HandItems('../img/hand/play-a-game.jfif', '');
-new HandItems('../hand/snow-shovel.jpg', '');
+new HandItems('../img/hand/snow-shovel.jpg', '');
 new HandItems('../img/hand/take-a-walk.png', '');
 new HandItems('../img/hand/two-cups.jpg', '');
 
@@ -46,8 +50,16 @@ function renderHands(){
     let htmlDiv = document.createElement('div');
 
     let htmlImage = document.createElement('img');
+    htmlImage.className='show';
     htmlImage.src=allHandArray[i].handImageSrc;
     htmlDiv.appendChild(htmlImage);
+
+//hover data
+    let htmlHoverDiv = document.createElement('div');
+    htmlHoverDiv.className='tooltip';
+    htmlHoverDiv.textContent=allHandArray[i].handHoverDescription;
+    htmlDiv.appendChild(htmlHoverDiv);
+
 
     let htmlHandDescription=document.createElement('p');
     htmlHandDescription.textContent=allHandArray[i].handDescription;
@@ -60,7 +72,11 @@ function renderHands(){
     //  We need  an event listener to respond to a click of the handImage.
     htmlButton.addEventListener('click', handleHandClick);
     htmlDiv.appendChild(htmlButton);
+
+
+
     handSection.appendChild(htmlDiv);
+
   }
 }
 

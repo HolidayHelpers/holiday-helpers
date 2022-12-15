@@ -12,3 +12,10 @@ console.log ('Hello from the cart js file');
 // 3.) We are taking user input. 
 //         Name
 //         Email Address       
+
+let cartGiftCount=localStorage.getItem('giftCount');
+
+let cartGiftItems=localStorage.getItem('giftsPledged');
+
+
+JSON.parse(localStorage.getItem('giftsPledged'))||[];

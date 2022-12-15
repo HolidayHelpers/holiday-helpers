@@ -7,6 +7,10 @@ Leah Wilner
 Kati Lee
 Eva Grace Smith
 
+
+(https://files.slack.com/files-pri/T3F4FFV5F-F04FCBY7QBA/hh-wireframe-domainmodel.png)[wireframe and domain model]
+
+
 ## User Stories
 ### Types of users: 
 1. Organization
@@ -38,6 +42,8 @@ Eva Grace Smith
 Wireframe and Domain Modeling Image is found within the repository, filename is "HolidayHelpers.drawio"
 
 
-Background Photo credit:  
+Photo credits:  
 
 Image by <a href="https://pixabay.com/users/583286-583286/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3671461">FABIANNE SIBBIO</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3671461">Pixabay</a>
+
+Image by <a href="https://pixabay.com/users/ken142857-30559248/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7517967">DAO NGUYEN</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7517967">Pixabay</a>
