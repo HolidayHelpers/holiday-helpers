@@ -6,8 +6,9 @@ console.log ('Hello from the hand js file');
 // respond to a click of the handImage.
 
 
-let giftClicks = localStorage.getItem('giftCount');
-let handClicks = localStorage.getItem('handCount');
+let giftClicks = localStorage.getItem('giftCount')||0;
+let handClicks = localStorage.getItem('handCount')||0;
+let handCartItems = []; //localStorage.getItem('handsPledged');
 // create array
 let allHandArray= [];
 let handSection = document.getElementById ('handPhotos');
@@ -17,9 +18,9 @@ let giftCountDiv = document.getElementById ('giftCount');
 handCountDiv.innerText=`Hands ${handClicks}`;
 giftCountDiv.innerText=`Gifts ${giftClicks}`;
 
-function HandItems(imageSrc, handDescription, handHoverDescription, click){
+function HandItems(imageSrc, handTitle, handHoverDescription, click){
   this.handImageSrc=imageSrc;
-  this.handDescription=handDescription;
+  this.handTitle=handTitle;
   this.handHoverDescription=handHoverDescription;
   if(click){
     this.click=click;
@@ -61,9 +62,9 @@ function renderHands(){
     htmlDiv.appendChild(htmlHoverDiv);
 
 
-    let htmlHandDescription=document.createElement('p');
-    htmlHandDescription.textContent=allHandArray[i].handDescription;
-    htmlDiv.appendChild(htmlHandDescription);
+    let htmlHandTitle=document.createElement('p');
+    htmlHandTitle.textContent=allHandArray[i].handTitle;
+    htmlDiv.appendChild(htmlHandTitle);
 
     let htmlButton = document.createElement('button');
     htmlButton.innerText='Click to Choose';
@@ -73,10 +74,7 @@ function renderHands(){
     htmlButton.addEventListener('click', handleHandClick);
     htmlDiv.appendChild(htmlButton);
 
-
-
     handSection.appendChild(htmlDiv);
-
   }
 }
 
@@ -91,8 +89,9 @@ function handleHandClick(event) {
   let handIndex=event.target.dataset.handIndex;
   console.log(allHandArray[handIndex].handImageSrc);
   //   localStorage:
+  handCartItems.push(allHandArray[handIndex].handImageSrc, allHandArray[handIndex].handTitle);
   localStorage.setItem('handCount', handClicks);
-  localStorage.setItem('handsPledged' , JSON.stringify(allHandArray[handIndex].handImageSrc));
+  localStorage.setItem('handsPledged' , JSON.stringify(handCartItems));
 
 }
 

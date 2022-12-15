@@ -205,22 +205,53 @@ p{
     padding-top: 10em;
 }
 
-.snowmen div{
+/* .snowmen div{
     display:flex;
     flex-direction: column;
     max-height: 40vh;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .snowmen div img{
     max-height: 40vh;
 }
 
+.snow_tooltip {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 10vh;
+    left: 25vw;
+    width: 50vw;
+    opacity: 0;
+    transition: opacity 1s;
+    background-color: #fff;
+    border-radius:15px;
+    padding: .5em;
+    min-width: 10rem;
+  }
+  
+  img.show:hover + div.snow_tooltip {
+    opacity:1;
+  }
+
+  .snow_tooltip img{
+    height: 15vh;
+    padding: 10px;
+}
+.snow_tooltip p{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(20, 83, 141); 
+}
+
 /* **********************ABOUT US Custom Pop up for Bio Info*********************** */
+.snowWoman div img{
+        height: 15vh;
+        padding: 10px;
+}
 
-
-.button{
+/* .button{
     position: relative;
     width: 7em;
     font-size: 22px;
@@ -309,4 +340,4 @@ p{
 {
   background-color:#A9F5F2;
   color:black;
-}
+} */
