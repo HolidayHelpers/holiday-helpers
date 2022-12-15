@@ -27,6 +27,16 @@ let handImage9 = document.getElementsByTagName('.handImage9 img');
 
 // document getElementsByTagName
 // create array
+let allHandsArray = [];
+pic1.src = allHandsArray[pic1].src;
+pic2.src = allHandsArray[pic2].src;
+pic3.src = allHandsArray[pic3].src;
+pic4.src = allHandsArray[pic4].src;
+pic5.src = allHandsArray[pic5].src;
+pic6.src = allHandsArray[pic6].src;
+pic7.src = allHandsArray[pic7].src;
+pic8.src = allHandsArray[pic8].src;
+pic9.src = allHandsArray[pic9].src;
 
 // function for handling click events
 function handleProductClick(event) {
