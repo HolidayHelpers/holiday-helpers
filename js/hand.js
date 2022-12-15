@@ -26,8 +26,15 @@ function HandItems(imageSrc, handDescription, click){
 }
 
 //we need our hand images and descriptions here,
-new HandItems('../img/aboutUs/snowmanApron.png', 'This is a description of this hand. What it is. Who it is for. Their age, etc');
-
+new HandItems('../img/hand/grocery-cart.jpeg', '');
+new HandItems('../img/hand/guy-reading.jpg', '');
+new HandItems('../img/hand/haircut.jpg', '');
+new HandItems('../img/hand/lawn-mower.jpg', '');
+new HandItems('../img/hand/pet-a-dog.jpg', '');
+new HandItems('../img/hand/play-a-game.jfif', '');
+new HandItems('../hand/snow-shovel.jpg', '');
+new HandItems('../img/hand/take-a-walk.png', '');
+new HandItems('../img/hand/two-cups.jpg', '');
 
 // need  more images and descriptions
 
