@@ -233,7 +233,7 @@ a:hover{
     padding: 10px;
 }
 
-#bethPopup{
+#bethPopup, #leahPopup, #ruthAnnPopup, #katiPopup, #evaPopup{
     position: absolute;
     top: 50vh;
     left: 25vw;
@@ -254,7 +254,7 @@ a:hover{
     -webkit-transition:all 1s;
 }
 
-#bethPopup:target{
+#bethPopup, #leahPopup, #ruthAnnPopup, #katiPopup, #evaPopup:target{
   -khtml-opacity:1;
   -moz-opacity : 1;
   -ms-filter: "alpha(opacity=100)";
