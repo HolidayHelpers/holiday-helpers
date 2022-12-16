@@ -270,3 +270,141 @@ a:hover{
     float: right;
     margin: 0 0 1.5em 0;
   }
+
+/* *********************************Bar Chart ************************************* */
+.barChart caption {
+	font:bold 150%/120% arial,helvetica,sans-serif;
+	padding-bottom:0.33em;
+}
+
+.barChart tbody th {
+	text-align:right;
+}
+
+@supports (display:grid) {
+
+	@media (min-width:32em) {
+
+		.barChart {
+			display:block;
+      width:300px;
+      height:300px;
+		}
+
+		.barChart caption {
+			display:block;
+		}
+
+		.barChart thead {
+			display:none;
+		}
+
+		.barChart tbody {
+			position:relative;
+			display:grid;
+			grid-template-columns:repeat(auto-fit, minmax(2em, 1fr));
+			column-gap:1%;
+			align-items:end;
+			height:100%;
+			margin:3em 0 1em 2.8em;
+			padding:0 1em;
+			border-bottom:2px solid rgba(0,0,0,0.5);
+			background:repeating-linear-gradient(
+				180deg,
+				rgba(170,170,170,0.7) 0,
+				rgba(170,170,170,0.7) 1px,
+				transparent 1px,
+				transparent 20%
+			);
+		}
+
+		.barChart tbody:before,
+		.barChart tbody:after {
+			position:absolute;
+			left:-3.2em;
+			width:2.8em;
+			text-align:right;
+			font:bold 80%/120% arial,helvetica,sans-serif;
+		}
+
+		.barChart tbody:before {
+			content:"100%";
+			top:-0.6em;
+		}
+
+		.barChart tbody:after {
+			content:"0%";
+			bottom:-0.6em;
+		}
+
+		.barChart tr {
+			position:relative;
+			display:block;
+		}
+
+		.barChart tr:hover {
+			z-index:999;
+		}
+
+		.barChart th,
+		.barChart td {
+			display:block;
+			text-align:center;
+		}
+
+		.barChart tbody th {
+			position:absolute;
+			top:-3em;
+			left:0;
+			width:100%;
+			font-weight:normal;
+			text-align:center;
+      white-space:nowrap;
+			text-indent:0;
+			transform:rotate(-45deg);
+		}
+
+		.barChart tbody th:after {
+			content:"";
+		}
+
+		.barChart td {
+			width:30%;
+			height:100%;
+			background :#43ace3;
+			border-radius:0.5em 0.5em 0 0;
+			transition:background 0.5s;
+		}
+
+		.barChart tr:hover td {
+			opacity:0.7;
+		}
+
+		.barChart td span {
+			overflow:hidden;
+			position:absolute;
+			left:50%;
+			top:50%;
+			width:0;
+			padding:0.5em 0;
+			margin:-1em 0 0;
+			font:normal 85%/120% arial,helvetica,sans-serif;
+/* 			background:white; */
+/* 			box-shadow:0 0 0.25em rgba(0,0,0,0.6); */
+			font-weight:bold;
+			opacity:0;
+			transition:opacity 0.5s;
+      color:white;
+		}
+
+		.togglebarChart:checked + table td span,
+		.barChart tr:hover td span {
+			width:4em;
+			margin-left:-2em; /* 1/2 the declared width */
+			opacity:1;
+		}
+/* *********************************Mailing List ************************************* */
+.mailingList {
+  color: #43ace3;
+  text-align: center;
+}

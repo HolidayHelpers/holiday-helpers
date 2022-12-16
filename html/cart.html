@@ -23,9 +23,28 @@
 
             <section class="pageWrapper">
 
-                <section>Goal Progress/chart</section>
-            <!-- add chart or progress indicator here -->
-
+                <section>
+                  <div>
+                    <table class="barChart">
+                      <caption>Giving Goal Progress</caption>
+                      <thead>
+                        <tr>
+                          <th scope="col">Item</th>
+                          <th scope="col">Percent</th>
+                        </tr>
+                      </thead><tbody>
+                        <tr style="height:85%">
+                          <th scope="row">Give a Gift</th>
+                          <td><span>85%</span></td>
+                        </tr>
+                        <tr style="height:23%">
+                          <th scope="row">Lend a Hand</th>
+                          <td><span>23%</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
                 <section id="shopping_cart">
        
                       
@@ -73,8 +92,19 @@
                 </section>
                 <!-- add items that user has chosed to donate/pledge here -->
 
-                <section>Add form info</section>
-                <!-- add form to gather user input -->
+                <section class="mailingList">
+                  <br>
+                  <p>Stay in touch!</p>
+                  <br>
+                  <form action="">
+                    Name:  <input type="text" name="name"><br>
+                    Email: <input type="email" name="email"><br>
+                    <br>
+                    <input type="button" value="Submit">
+                  </form>
+
+
+                </section>
 
 
          </section>
