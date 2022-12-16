@@ -55,7 +55,7 @@ function renderHands(){
     htmlImage.src=allHandArray[i].handImageSrc;
     htmlDiv.appendChild(htmlImage);
 
-//hover data
+    //hover data
     let htmlHoverDiv = document.createElement('div');
     htmlHoverDiv.className='tooltip';
     htmlHoverDiv.textContent=allHandArray[i].handHoverDescription;
