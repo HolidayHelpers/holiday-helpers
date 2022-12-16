@@ -57,6 +57,7 @@ h2{
 }
 
 .secondary h2{
+    margin-top: 20px;
     font-family: 'Handlee', cursive;
     font-size: 4em;
     text-align: center;
@@ -174,8 +175,30 @@ p{
 
 
 
-/* **********************HAND*********************** */
 /* **********************CART*********************** */
+/* .pageWrapper{
+    display: flex;
+}
+
+.pageWrapper section{
+    background-color: white;
+    margin: auto;
+    margin-top: 4em;
+    height: 60vh;
+    width: 30%;
+    border-radius: 20px;
+
+} */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -198,7 +221,7 @@ p{
 
 .snowmen{
     position: relative;
-    bottom: -5vh;
+    bottom: -15%;
     display: flex;
     justify-content: space-evenly;
     height: 40vh;

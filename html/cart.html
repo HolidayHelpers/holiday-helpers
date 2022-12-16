@@ -13,20 +13,71 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/reset.css">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/cart.css">
     </head>
     <body>
         <header></header>
 
-        <main class="cart secondary">
+        <main class="secondary" id="cart">
             <h2>Thank You!</h2>
-            <!-- <h2>Tis the season for spreading cheer!</h2> -->
-            <section>Goal Progress</section>
+
+            <section class="pageWrapper">
+
+                <section>Goal Progress/chart</section>
             <!-- add chart or progress indicator here -->
-            <section>Items Pledged</section>
-            <!-- add items that user has chosed to donate/pledge here -->
-            <section>Add form info</section>
-            <!-- add form to gather user input -->
+
+                <section id="shopping_cart">
+       
+                      
+                      <div id="table">
+                        
+                        <div class="layout-inline row th">
+                          <div class="col col-pro">Pledges</div>
+                          <div class="col col-qty align-center">QTY</div>
+                  
+                        </div>
+                        
+                        <div id = "cartStart" class="layout-inline row">
+                          
+                          <div class="col col-pro layout-inline">
+                            <img src="../img/aboutUs/snowmanApron.png" alt="snowman" />
+                            <p>Happy Little Critter</p>
+                          </div>                  
+                          <div class="col col-qty layout-inline">
+                            <a href="#" class="qty qty-minus">-</a>
+                              <input type="numeric" value="3" />
+                            <a href="#" class="qty qty-plus">+</a>
+                          </div>
+
+                        </div>
+                        
+                    
+                         <div class="tf">
+                            <div class="row layout-inline">
+                             <div class="col">
+                               <p>Total</p>
+                             </div>
+                             <div class="col"></div>
+                           </div>
+                         </div>         
+                    </div>
+                      
+                      <a href="#" class="btn btn-update">Update cart</a>
+                    
+                  </div>
+
+
+
+
+                
+                </section>
+                <!-- add items that user has chosed to donate/pledge here -->
+
+                <section>Add form info</section>
+                <!-- add form to gather user input -->
+
+
+         </section>
 
 
 
