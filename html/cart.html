@@ -22,6 +22,7 @@
             <h2>Thank You!</h2>
 
             <section class="pageWrapper">
+<!-- /* *********************************Bar Chart ************************************* */ -->
 
                 <section>
                   <div>
@@ -45,52 +46,41 @@
                     </table>
                   </div>
                 </section>
-                <section id="shopping_cart">
-       
-                      
-                      <div id="table">
-                        
-                        <div class="layout-inline row th">
-                          <div class="col col-pro">Pledges</div>
-                          <div class="col col-qty align-center">QTY</div>
-                  
-                        </div>
-                        
-                        <div id = "cartStart" class="layout-inline row">
-                          
-                          <div class="col col-pro layout-inline">
+
+
+
+<!-- /* *********************************Shopping Cart ************************************* */ -->
+
+            <section id="shopping_cart">              
+                <div id="table">       
+                    <div id="tableHead" class="layout-inline row th">
+                      <span id="pledges" class="col col-pro">Pledges</span>
+                      <span id="thDescription" class="align-center">Description</span>
+                      <span id="thQty" class="col col-qty align-center">QTY</span>
+                    </div>                    
+                    <div id = "cartStart" class="layout-inline row">     
+                        <span id = "imageContainer" class="col col-pro layout-inline">
                             <img src="../img/aboutUs/snowmanApron.png" alt="snowman" />
+                        </span> 
+                        <span id="title">
                             <p>Happy Little Critter</p>
-                          </div>                  
-                          <div class="col col-qty layout-inline">
-                            <a href="#" class="qty qty-minus">-</a>
-                              <input type="numeric" value="3" />
-                            <a href="#" class="qty qty-plus">+</a>
-                          </div>
-
+                        </span>                  
+                        <span id="addRemoveQty" class="col col-qty layout-inline">
+                          <a href="#" class="qty qty-minus">-</a>
+                             <input id="qty" type="numeric" value="3" />
+                          <a href="#" class="qty qty-plus">+</a>
+                        </span>
+                    </div>                   
+                      <div class="tf">
+                        <div class="row layout-inline col">
+                            <p>Total</p>
                         </div>
-                        
-                    
-                         <div class="tf">
-                            <div class="row layout-inline">
-                             <div class="col">
-                               <p>Total</p>
-                             </div>
-                             <div class="col"></div>
-                           </div>
-                         </div>         
-                    </div>
-                      
-                      <a href="#" class="btn btn-update">Update cart</a>
-                    
-                  </div>
-
-
-
-
-                
-                </section>
-                <!-- add items that user has chosed to donate/pledge here -->
+                      </div>
+                    </div>                               
+                      <a href="#" class="btn btn-update">Update cart</a>                    
+                             
+            </section>
+<!-- /* *********************************Mailing List ************************************* */ -->
 
                 <section class="mailingList">
                   <br>
