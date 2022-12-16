@@ -57,6 +57,7 @@ h2{
 }
 
 .secondary h2{
+    margin-top: 20px;
     font-family: 'Handlee', cursive;
     font-size: 4em;
     text-align: center;
@@ -64,6 +65,19 @@ h2{
     color: whitesmoke;
     text-shadow: 2px 2px 3px black;
 }
+
+
+  .tooltip {
+    position: absolute;
+    opacity: 0;
+    background-color: #fff;
+    padding: .5em;
+    min-width: 10rem;
+  }
+  
+  img.show:hover + div.tooltip {
+    opacity:1;
+  }
 
 
 
@@ -121,17 +135,17 @@ a:hover{
     /* box-shadow: 1px 1px 5px 2px black; */
 
 }
-/* **********************GIFT*********************** */
+/* **********************GIFT and HAND*********************** */
 /* #giftPhotos{
     /* display: inline-grid; 
 }*/
 
 
-#giftPhotos div{
+#giftPhotos div, #handPhotos div{
     display: inline-grid;
      background-color: white;
      max-height: 15em;
-    max-width: 10em;
+    max-width: 15em;
     overflow-wrap: break-word;
     margin: 1em;
     padding: 1em;
@@ -143,13 +157,17 @@ a:hover{
     box-shadow: rgba(0, 0, 0, 0.387) 0px 10px 20px, rgba(0, 0, 0, 0.475) 0px 6px 6px;
 }
 
-#giftPhotos div img{
+p{
+    margin-top: 5px;
+}
+
+#giftPhotos div img, #handPhotos div img{
     max-height: 10em;
 }
 
-#giftPhotos div button{
+#giftPhotos div button, #handPhotos div button{
     margin: 4px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgb(20, 83, 141);
     color: white;
 }
@@ -157,8 +175,30 @@ a:hover{
 
 
 
-/* **********************HAND*********************** */
 /* **********************CART*********************** */
+/* .pageWrapper{
+    display: flex;
+}
+
+.pageWrapper section{
+    background-color: white;
+    margin: auto;
+    margin-top: 4em;
+    height: 60vh;
+    width: 30%;
+    border-radius: 20px;
+
+} */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -181,29 +221,60 @@ a:hover{
 
 .snowmen{
     position: relative;
-    bottom: -5vh;
+    bottom: -15%;
     display: flex;
     justify-content: space-evenly;
     height: 40vh;
     padding-top: 10em;
 }
 
-.snowmen div{
+/* .snowmen div{
     display:flex;
     flex-direction: column;
     max-height: 40vh;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .snowmen div img{
     max-height: 40vh;
 }
 
+.snow_tooltip {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 10vh;
+    left: 25vw;
+    width: 50vw;
+    opacity: 0;
+    transition: opacity 1s;
+    background-color: #fff;
+    border-radius:15px;
+    padding: .5em;
+    min-width: 10rem;
+  }
+  
+  img.show:hover + div.snow_tooltip {
+    opacity:1;
+  }
+
+  .snow_tooltip img{
+    height: 15vh;
+    padding: 10px;
+}
+.snow_tooltip p{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(20, 83, 141); 
+}
+
 /* **********************ABOUT US Custom Pop up for Bio Info*********************** */
+.snowWoman div img{
+        height: 15vh;
+        padding: 10px;
+}
 
-
-.button{
+/* .button{
     position: relative;
     width: 7em;
     font-size: 22px;
@@ -292,4 +363,4 @@ a:hover{
 {
   background-color:#A9F5F2;
   color:black;
-}
+} */
