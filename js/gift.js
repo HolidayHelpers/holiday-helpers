@@ -33,15 +33,15 @@ function GiftItems(imageSrc, giftDescription, click){
 
 //we need our gift images and descriptions here,
 // new GiftItems('../img/aboutUs/snowmanApron.png', 'This is a description of this gift. What it is. Who it is for. Their age, etc');
-new GiftItems('../img/Gifts/books.jpg', '3 year old girl, bedtime reading books');
-new GiftItems('../img/Gifts/boots.jpg', 'boy\'s winter boots, size 9');
-new GiftItems('../img/Gifts/clothing.jpg');
-new GiftItems('../img/Gifts/coatsAccessories.jpg', 'girl\'s winter coat, size 8');
-new GiftItems('../img/Gifts/gas.jpg', '$50 gas card');
-new GiftItems('../img/Gifts/groceries.jpg', '$50 grocery gift card');
-new GiftItems('../img/Gifts/household.jpg');
-new GiftItems('../img/Gifts/petSupplies.jpg',);
-new GiftItems('../img/Gifts/toys.jpg', '9 year old boy, Toy Truck');
+new GiftItems('../img/Gifts/books.jpg', 'Children\'s Books', 'Share the gift of a timeless story and encourage the love of literature.');
+new GiftItems('../img/Gifts/boots.jpg', 'Snow Boots', 'Gift snow boots for the family to keep feet warm and dry this winter. Childrens and adults sizes needed.');
+new GiftItems('../img/Gifts/clothing.jpg', 'Clothing', 'Families have listed clothing as one of their most needed items.');
+new GiftItems('../img/Gifts/coatsAccessories.jpg', 'Coats and Cold Weather Accessories', 'Winters in the midwest can be brutally cold and coats, hats, gloves, and scarves are needed to protect from the elements.');
+new GiftItems('../img/Gifts/gas.jpg', 'Fuel Card', 'Gas prices hit record highs in 2022 and many people are struggling to afford fuel.');
+new GiftItems('../img/Gifts/groceries.jpg', 'Groceries', 'Inflation and supply chain disruptions have caused many people in our community to become food insecure.');
+new GiftItems('../img/Gifts/household.jpg', 'Household Essentials', 'Things like household cleaner, paper towels, and laundry detergent are always in demand.');
+new GiftItems('../img/Gifts/petSupplies.jpg', 'Pet Supplies', 'Furry friends are also in need this holiday season. Help with pet food, treats, and toys.');
+new GiftItems('../img/Gifts/toys.jpg', 'Toys', 'Give a child a new toy to make the holidays special! Toys are needed for all ages.');
 
 // need  more images and descriptions
 
