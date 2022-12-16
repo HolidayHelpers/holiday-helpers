@@ -53,6 +53,7 @@ h2{
     background-image:url(../img/no_village_winter.png);
     background-size:auto;
     background-position: top right;
+    overflow: auto;
 
 }
 
@@ -66,6 +67,12 @@ h2{
     text-shadow: 2px 2px 3px black;
 }
 
+.content-wrap {
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+   padding-bottom: 200px;
+    }
 
   .tooltip {
     position: absolute;
