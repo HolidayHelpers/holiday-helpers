@@ -48,8 +48,8 @@ for(let i=0; i < cartItems.length; i++){
   let htmlDiv = document.createElement('div');
   itemCount[i]=1;
   totalCount++;
-// exact html put into a template literal, may need to change to a button to make work,
-// and add event listeners. (buttons replace hrefs)
+  // exact html put into a template literal, may need to change to a button to make work,
+  // and add event listeners. (buttons replace hrefs)
   let htmlCartItem = `<div id= "cartStart" class="layout-inline row">
 <span id = "imageContainer" class = "col col-pro layout-inline">
 <img src=${cartItemImgSrc} />
@@ -83,8 +83,58 @@ locationHandPercentage.innerHTML=`${handPercentage}%`;
 let locationHandPercentageStytle = document.getElementById('handPercentageStyle');
 locationHandPercentageStytle.style= `height:${handPercentage}%`;
 
+
+
+
+function myFunction() {
+
+  let contactInfo= document.getElementById("contactInfo");
+  let formName = document.getElementById("userName").value;
+  let formEmail = document.getElementById("userEmail").value;
+  event.preventDefault();
+  console.log(formName, formEmail);
+
+  let storedName = localStorage.setItem('formName', formName);
+  let storedEmail =localStorage.setItem('formEmail', formEmail);
+
+}
+  // console.log(formName, formEmail);
+// function myFunction(event){
+
+//   document.getElementById('contactInfo').submit();
+//   event.preventDefault();
+//   let formName = document.getElementById('userName').value;
+//   let formEmail = document.getElementById('userEmail').value;
+//   console.log(formName, formEmail);
+
+
+
+// }
+
+// function handleFormClick(event) {
+//   console.log('click event happening' , event);
+//   formClicks++;
+//   giftCountDiv.innerText=`Gifts ${giftClicks}`;
+//   console.log(event.target.dataset.giftIndex);
+//   let giftIndex=event.target.dataset.giftIndex;
+//   console.log(allFormArray[formIndex].giftImageSrc);
+//   //   localStorage:
+//   giftCartItems.push(allGiftArray[giftIndex].giftImageSrc, allGiftArray[giftIndex].giftTitle);
+//   localStorage.setItem('giftCount', giftClicks);
+//   localStorage.setItem('giftsPledged' , JSON.stringify(allGiftArray[giftIndex].giftImageSrc));
+// }
+
+
+
+
+
+
+
+
+
+
 function handleClear(){
-  console.log("handleForm ");
+  // console.log("handleForm");
   //clear out the previous cart
   localStorage.setItem('handCount', 0);
   localStorage.removeItem('handsPledged');
@@ -92,5 +142,3 @@ function handleClear(){
   localStorage.removeItem('giftsPledged');
   location.reload();
 }
-
-
