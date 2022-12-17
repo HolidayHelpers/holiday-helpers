@@ -48,6 +48,7 @@ function renderHands(){
   for (let i=0; i < allHandArray.length; i++){
 
     let htmlDiv = document.createElement('div');
+    // htmlDiv.className='tooltip-wrap';
 
     let htmlImage = document.createElement('img');
     htmlImage.className='show';
