@@ -7,8 +7,9 @@ console.log ('Hello from the gift js file');
 
 
 
-let giftClicks = localStorage.getItem('giftCount');
-let handClicks = localStorage.getItem('handCount');
+let giftClicks = localStorage.getItem('giftCount')||0;
+let handClicks = localStorage.getItem('handCount')||0;
+let giftCartItems = [];
 // create array
 let allGiftArray= [];
 let giftSection = document.getElementById ('giftPhotos');
@@ -20,9 +21,10 @@ giftCountDiv.innerText=`Gifts ${giftClicks}`;
 
 
 
-function GiftItems(imageSrc, giftDescription, click){
+function GiftItems(imageSrc, giftTitle, giftHoverDescription, click){
   this.giftImageSrc=imageSrc;
-  this.giftDescription=giftDescription;
+  this.giftTitle=giftTitle;
+  this.giftHoverDescription = giftHoverDescription;
   if(click){
     this.click=click;
   } else{
@@ -53,12 +55,18 @@ function renderGifts(){
     let htmlDiv = document.createElement('div');
 
     let htmlImage = document.createElement('img');
+    htmlImage.className='show';
     htmlImage.src=allGiftArray[i].giftImageSrc;
     htmlDiv.appendChild(htmlImage);
 
-    let htmlGiftDescription=document.createElement('p');
-    htmlGiftDescription.textContent=allGiftArray[i].giftDescription;
-    htmlDiv.appendChild(htmlGiftDescription);
+    let htmlHoverDiv = document.createElement('div');
+    htmlHoverDiv.className='tooltip';
+    htmlHoverDiv.textContent=allGiftArray[i].giftHoverDescription;
+    htmlDiv.appendChild(htmlHoverDiv);
+
+    let htmlGiftTitle=document.createElement('p');
+    htmlGiftTitle.textContent=allGiftArray[i].giftTitle;
+    htmlDiv.appendChild(htmlGiftTitle);
 
     let htmlButton = document.createElement('button');
     htmlButton.innerText='Click to Choose';
@@ -82,6 +90,7 @@ function handleGiftClick(event) {
   let giftIndex=event.target.dataset.giftIndex;
   console.log(allGiftArray[giftIndex].giftImageSrc);
   //   localStorage:
+  giftCartItems.push(allGiftArray[giftIndex].giftImageSrc, allGiftArray[giftIndex].giftTitle);
   localStorage.setItem('giftCount', giftClicks);
   localStorage.setItem('giftsPledged' , JSON.stringify(allGiftArray[giftIndex].giftImageSrc));
 
