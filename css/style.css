@@ -172,7 +172,8 @@ a:hover{
 }
 
 #giftPhotos div img, #handPhotos div img{
-    max-height: 10em;
+    height: 10em;
+    width: 15em;
 }
 
 #giftPhotos div button, #handPhotos div button{
