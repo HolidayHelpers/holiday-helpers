@@ -34,13 +34,13 @@
                           <th scope="col">Percent</th>
                         </tr>
                       </thead><tbody>
-                        <tr style="height:85%">
+                        <tr id ="giftPercentageStyle" style="height:85%">
                           <th scope="row">Give a Gift</th>
-                          <td><span>85%</span></td>
+                          <td><span id="giftPercentage">85%</span></td>
                         </tr>
-                        <tr style="height:23%">
+                        <tr id ="handPercentageStyle" style="height:23%">
                           <th scope="row">Lend a Hand</th>
-                          <td><span>23%</span></td>
+                          <td><span id="handPercentage">23%</span></td>
                         </tr>
                       </tbody>
                     </table>
@@ -73,11 +73,15 @@
                     </div>                   
                       <div class="tf">
                         <div class="row layout-inline col">
+                          <span>
                             <p>Total</p>
+                            <div id="cartTotal">0</div>
+                          </span>
                         </div>
                       </div>
-                    </div>                               
-                      <a href="#" class="btn btn-update">Update cart</a>                    
+                    </div>   
+                    <button type="button" class="btn btn-update" onclick="handleClear()" >Clear cart</button>                            
+                      <!-- <a href="#" class="btn btn-update">Update cart</a>                     -->
                              
             </section>
 <!-- /* *********************************Mailing List ************************************* */ -->
