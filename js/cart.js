@@ -30,8 +30,8 @@ for(let i =0; i < cartGiftItems.length; i++)
 
 let cartSection = document.getElementById ('cartStart');
 let cartTotal = document.getElementById ('cartTotal');
-let giftClicks = localStorage.getItem('giftCount')||3;
-let handClicks = localStorage.getItem('handCount')||5;
+let giftClicks = Number(localStorage.getItem('giftCount')||0) +10;
+let handClicks = Number(localStorage.getItem('handCount')||0) +5;
 
 
 
@@ -42,7 +42,7 @@ for(let i=0; i < cartItems.length; i++){
   let cartItemImgSrc = cartItems[i];i++;
   let cartItemTitle = cartItems[i];
   let htmlDiv = document.createElement('div');
-  itemCount[i]=1;
+  // itemCount[i]=1;
   totalCount++;
   // exact html put into a template literal, may need to change to a button to make work,
   // and add event listeners. (buttons replace hrefs)
@@ -54,20 +54,48 @@ for(let i=0; i < cartItems.length; i++){
 <p>${cartItemTitle}</p>
 </span>                 
 <span id="addRemoveQty" class="col col-qty layout-inline">
-<a href="#" class="qty qty-minus">-</a>
-  <input type="numeric" value="${itemCount[i]}" />
-<a href="#" class="qty qty-plus">+</a>
+<a href="#" class="qty qty-minus"id="minus-${i}" onclick="subtractItemFromCart(event)">-</a>
+  <input type="numeric" id="value-${i}"value="1" />
+<a href="#" class="qty qty-plus"id="plus-${i}" onclick="plusItemFromCart(event)">+</a>
 </div>`;
-
 
   htmlDiv.innerHTML = htmlCartItem;
   cartSection.appendChild(htmlDiv);
   // Cart Total
   cartTotal.textContent= `${totalCount}`;
 }
+// add and subtract quantity
+// eslint-disable-next-line no-unused-vars
+function subtractItemFromCart(event){
+  event.preventDefault();
+  let numberFromString=event.target.id;
+  // remove the first six letters and the dash symbol from id and turn into a number to use as an index, using the slice function to remove characters
+  const cartItemIndex=numberFromString.slice(6);
+  let cartQtyValue= document.getElementById(`value-${cartItemIndex}`).value;
+  if (cartQtyValue>0){
+    document.getElementById(`value-${cartItemIndex}`).value--;
+  }
+  totalCount--;
+  cartTotal.textContent=totalCount;
+}
+// eslint-disable-next-line no-unused-vars
+function plusItemFromCart(event){
+  event.preventDefault();
+  let numberFromString=event.target.id;
+  const cartItemIndex=numberFromString.slice(5);
+  document.getElementById(`value-${cartItemIndex}`).value++;
+  totalCount++;
+  cartTotal.textContent=totalCount;
+}
+
+
+
+
+
+
 // Chart update, calculate new percentages
-let giftPercentage = Math.floor(giftClicks/10*100);
-let handPercentage = Math.floor(handClicks/10*100);
+let giftPercentage = Math.floor(giftClicks/20*100);
+let handPercentage = Math.floor(handClicks/20*100);
 
 let locationGiftPercentage = document.getElementById('giftPercentage');
 locationGiftPercentage.innerHTML=`${giftPercentage}%`;
