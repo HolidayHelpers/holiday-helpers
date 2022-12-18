@@ -92,7 +92,7 @@ function handleGiftClick(event) {
   //   localStorage:
   giftCartItems.push(allGiftArray[giftIndex].giftImageSrc, allGiftArray[giftIndex].giftTitle);
   localStorage.setItem('giftCount', giftClicks);
-  localStorage.setItem('giftsPledged' , JSON.stringify(allGiftArray[giftIndex].giftImageSrc));
+  localStorage.setItem('giftsPledged' , JSON.stringify(giftCartItems));
 
 }
 
