@@ -92,6 +92,6 @@ function handleHandClick(event) {
   handCartItems.push(allHandArray[handIndex].handImageSrc, allHandArray[handIndex].handTitle);
   localStorage.setItem('handCount', handClicks);
   localStorage.setItem('handsPledged' , JSON.stringify(handCartItems));
-
+  this.removeEventListener('click', handleHandClick);
 }
 
