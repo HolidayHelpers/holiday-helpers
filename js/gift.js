@@ -93,6 +93,6 @@ function handleGiftClick(event) {
   giftCartItems.push(allGiftArray[giftIndex].giftImageSrc, allGiftArray[giftIndex].giftTitle);
   localStorage.setItem('giftCount', giftClicks);
   localStorage.setItem('giftsPledged' , JSON.stringify(giftCartItems));
-
+  this.removeEventListener('click', handleGiftClick);
 }
 
