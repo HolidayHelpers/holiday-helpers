@@ -414,3 +414,27 @@ a:hover{
   color: #43ace3;
   text-align: center;
 }
+#thanksWording{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  text-align:center ;
+
+
+  
+
+}
+#thanksWording h2{
+  font-size: 2em;
+}
+
+#thanksWording h3{
+  font-family: 'Handlee', cursive;
+  font-size: 1.5em;
+}
+
+.thankYou div img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
