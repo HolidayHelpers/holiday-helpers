@@ -15,7 +15,6 @@ console.log ('Hello from the cart js file');
 let cartHandItems = JSON.parse(localStorage.getItem('handsPledged'))||[];
 let cartGiftItems = JSON.parse(localStorage.getItem('giftsPledged'))||[];
 let cartItems=[];
-let itemCount=[];
 let totalCount =0;
 
 // combine hand and gift items into a single array
@@ -30,8 +29,8 @@ for(let i =0; i < cartGiftItems.length; i++)
 
 let cartSection = document.getElementById ('cartStart');
 let cartTotal = document.getElementById ('cartTotal');
-let giftClicks = Number(localStorage.getItem('giftCount')||0) +10;
-let handClicks = Number(localStorage.getItem('handCount')||0) +5;
+let giftClicks = Number(localStorage.getItem('giftCount')||0) ;
+let handClicks = Number(localStorage.getItem('handCount')||0) ;
 
 
 
@@ -94,21 +93,33 @@ function plusItemFromCart(event){
 
 
 // Chart update, calculate new percentages
-let giftPercentage = Math.floor(giftClicks/20*100);
-let handPercentage = Math.floor(handClicks/20*100);
+function updateChart(){
+  let giftClicks = Number(localStorage.getItem('giftsToBePledged')||0) +10;
+  let handClicks = Number(localStorage.getItem('handsToBePledged')||0) +5;
 
-let locationGiftPercentage = document.getElementById('giftPercentage');
-locationGiftPercentage.innerHTML=`${giftPercentage}%`;
-let locationGiftPercentageStyle = document.getElementById('giftPercentageStyle');
-locationGiftPercentageStyle.style= `height:${giftPercentage}%`;
+  let giftPercentage = Math.floor(giftClicks/20*100);
+  if (giftPercentage >= 100){
+    giftPercentage=100;
+  }
+  
+  let handPercentage = Math.floor(handClicks/20*100);
+  if (handPercentage >= 100){
+    handPercentage=100;
+  }
 
-let locationHandPercentage = document.getElementById('handPercentage');
-locationHandPercentage.innerHTML=`${handPercentage}%`;
-let locationHandPercentageStyle = document.getElementById('handPercentageStyle');
-locationHandPercentageStyle.style= `height:${handPercentage}%`;
+  let locationGiftPercentage = document.getElementById('giftPercentage');
+  locationGiftPercentage.innerHTML=`${giftPercentage}%`;
+  let locationGiftPercentageStyle = document.getElementById('giftPercentageStyle');
+  locationGiftPercentageStyle.style= `height:${giftPercentage}%`;
 
+  let locationHandPercentage = document.getElementById('handPercentage');
+  locationHandPercentage.innerHTML=`${handPercentage}%`;
+  let locationHandPercentageStyle = document.getElementById('handPercentageStyle');
+  locationHandPercentageStyle.style= `height:${handPercentage}%`;
 
+}
 
+updateChart();
 
 function myFunction() {
 // this is getting data from the user form
@@ -140,12 +151,17 @@ function myFunction() {
 
 
 function handleClear(){
-  // console.log("handleForm");
+
   //clear out the previous cart
-  // localStorage.setItem('handCount', 0);
   localStorage.removeItem('handsPledged');
-  // localStorage.setItem('giftCount', 0);
   localStorage.removeItem('giftsPledged');
-  //we need to find a way to redraw the cart.
-  // location.reload();
+
+  //clear out hand and gift count totals
+  localStorage.setItem('handCount', 0);
+  localStorage.setItem('giftCount', 0);
+
+  localStorage.setItem('giftsToBePledged', giftClicks);
+  localStorage.setItem('handsToBePledged', handClicks);
+
+  updateChart();
 }
