@@ -34,10 +34,6 @@ let giftClicks = localStorage.getItem('giftCount')||3;
 let handClicks = localStorage.getItem('handCount')||5;
 
 
-// cartItems.push(JSON.parse)
-
-
-// console.log("cartItems ", cartGiftItems);
 
 for(let i=0; i < cartItems.length; i++){
 
@@ -75,70 +71,53 @@ let handPercentage = Math.floor(handClicks/10*100);
 
 let locationGiftPercentage = document.getElementById('giftPercentage');
 locationGiftPercentage.innerHTML=`${giftPercentage}%`;
-let locationGiftPercentageStytle = document.getElementById('giftPercentageStyle');
-locationGiftPercentageStytle.style= `height:${giftPercentage}%`;
+let locationGiftPercentageStyle = document.getElementById('giftPercentageStyle');
+locationGiftPercentageStyle.style= `height:${giftPercentage}%`;
 
 let locationHandPercentage = document.getElementById('handPercentage');
 locationHandPercentage.innerHTML=`${handPercentage}%`;
-let locationHandPercentageStytle = document.getElementById('handPercentageStyle');
-locationHandPercentageStytle.style= `height:${handPercentage}%`;
+let locationHandPercentageStyle = document.getElementById('handPercentageStyle');
+locationHandPercentageStyle.style= `height:${handPercentage}%`;
 
 
 
 
 function myFunction() {
-
-  let contactInfo= document.getElementById("contactInfo");
-  let formName = document.getElementById("userName").value;
-  let formEmail = document.getElementById("userEmail").value;
-  event.preventDefault();
+// this is getting data from the user form
+  let formName = document.getElementById('userName').value;
+  let formEmail = document.getElementById('userEmail').value;
   console.log(formName, formEmail);
 
-  let storedName = localStorage.setItem('formName', formName);
-  let storedEmail =localStorage.setItem('formEmail', formEmail);
+  // localStorage.setItem('formName', formName);
+  // localStorage.setItem('formEmail', formEmail);
+  // this is the thank you wording
+  let thanks = document.getElementById('thanksWording');
 
+  if (totalCount===1){
+    thanks.innerHTML= `<h3>Thank You</h3>
+<h2>${formName},</h2> 
+<h3>your</h3>
+<h2>${totalCount}</h2>
+<h3>pledge helps spread holiday cheer in our community!</h3>`;}
+  else{
+    thanks.innerHTML= `<h3>Thank You</h3>
+<h2>${formName},</h2> 
+<h3>your</h3>
+<h2>${totalCount}</h2>
+<h3>pledges help spread holiday cheer in our community!</h3>`;}
+
+
+  handleClear();
 }
-  // console.log(formName, formEmail);
-// function myFunction(event){
-
-//   document.getElementById('contactInfo').submit();
-//   event.preventDefault();
-//   let formName = document.getElementById('userName').value;
-//   let formEmail = document.getElementById('userEmail').value;
-//   console.log(formName, formEmail);
-
-
-
-// }
-
-// function handleFormClick(event) {
-//   console.log('click event happening' , event);
-//   formClicks++;
-//   giftCountDiv.innerText=`Gifts ${giftClicks}`;
-//   console.log(event.target.dataset.giftIndex);
-//   let giftIndex=event.target.dataset.giftIndex;
-//   console.log(allFormArray[formIndex].giftImageSrc);
-//   //   localStorage:
-//   giftCartItems.push(allGiftArray[giftIndex].giftImageSrc, allGiftArray[giftIndex].giftTitle);
-//   localStorage.setItem('giftCount', giftClicks);
-//   localStorage.setItem('giftsPledged' , JSON.stringify(allGiftArray[giftIndex].giftImageSrc));
-// }
-
-
-
-
-
-
-
-
 
 
 function handleClear(){
   // console.log("handleForm");
   //clear out the previous cart
-  localStorage.setItem('handCount', 0);
+  // localStorage.setItem('handCount', 0);
   localStorage.removeItem('handsPledged');
-  localStorage.setItem('giftCount', 0);
+  // localStorage.setItem('giftCount', 0);
   localStorage.removeItem('giftsPledged');
-  location.reload();
+  //we need to find a way to redraw the cart.
+  // location.reload();
 }
