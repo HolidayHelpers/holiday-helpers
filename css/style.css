@@ -219,6 +219,7 @@ a:hover{
 
 /* **********************ABOUT US*********************** */
 .about-us{
+    position: relative;
     width: 100vw;
     height: 90vh;
     background-image:url(../img/aboutUs/blank_village.png);
@@ -236,7 +237,7 @@ a:hover{
 
 .snowmen{
     position: relative;
-    bottom: -15%;
+    bottom: -8%;
     display: flex;
     justify-content: space-evenly;
     height: 40vh;

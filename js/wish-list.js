@@ -100,7 +100,7 @@ function addNewHand(){
   }
 
 
-    //putting items into local storage to add to the hand page as a new hand option
-    localStorage.setItem('newHand',JSON.stringify(newHandItem));
+  //putting items into local storage to add to the hand page as a new hand option
+  localStorage.setItem('newHand',JSON.stringify(newHandItem));
 
 }
