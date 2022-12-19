@@ -37,6 +37,20 @@ function addNewGift(){
     newGiftItem .push('toys', document.getElementById('description').value);
   } else if (checkRadio==='snowBoots') {
     newGiftItem .push('snowBoots', document.getElementById('description').value);
+  }else if (checkRadio==='clothing') {
+    newGiftItem .push('clothing', document.getElementById('description').value);
+  }else if (checkRadio==='coats') {
+    newGiftItem .push('coats', document.getElementById('description').value);
+  }else if (checkRadio==='fuelCard') {
+    newGiftItem .push('fuelCard', document.getElementById('description').value);
+  }else if (checkRadio==='childrenBooks') {
+    newGiftItem .push('childrenBooks', document.getElementById('description').value);
+  }else if (checkRadio==='groceries') {
+    newGiftItem .push('groceries', document.getElementById('description').value);
+  }else if (checkRadio==='householdEssentials') {
+    newGiftItem .push('householdEssentials', document.getElementById('description').value);
+  }else if (checkRadio==='petSupplies') {
+    newGiftItem .push('petSupplies', document.getElementById('description').value);
   }
 
 
