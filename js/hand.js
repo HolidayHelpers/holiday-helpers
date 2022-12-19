@@ -33,9 +33,37 @@ function HandItems(imageSrc, handTitle, handHoverDescription, click){
 for (let index = 0; index < newHandSet.length; index+=2) {
   if(newHandSet[index]==='groceryShopping'){
     new HandItems('../img/hand/grocery-cart.jpeg', 'Grocery Shopping', newHandSet[index+1]);
+    console.log('test1');
   }
+
   else if(newHandSet[index]==='readABook'){
     new HandItems('../img/hand/guy-reading.jpg', 'Read a Book', newHandSet[index+1]);
+    console.log('test2');
+  }
+
+  else if(newHandSet[index]==='hairCut'){
+    new HandItems('../img/hand/haircut.jpg', 'Hair Cut', newHandSet[index+1]);
+    console.log('test3');
+    console.log(newHandSet[index]==='hairCut');
+  }
+
+  else if(newHandSet[index]==='mowALawn'){
+    new HandItems('../img/hand/lawn-mower.jpg', 'Mow a Lawn', newHandSet[index+1]);
+  }
+  else if(newHandSet[index]==='shovelAWalk'){
+    new HandItems('../img/hand/snow-shovel.jpg', 'Shovel a Walk', newHandSet[index+1]);
+  }
+  else if(newHandSet[index]==='takeAWalk'){
+    new HandItems('../img/hand/take-a-walk.png', 'Take a Walk', newHandSet[index+1]);
+  }
+  else if(newHandSet[index]==='shareACup'){
+    new HandItems('../img/hand/two-cups.jpg', 'Share a Cup', newHandSet[index+1]);
+  }
+  else if(newHandSet[index]==='petADog'){
+    new HandItems('../img/hand/pet-a-dog.jpg', 'Pet a Dog', newHandSet[index+1]);
+  }
+  else if(newHandSet[index]==='playAGame'){
+    new HandItems('../img/hand/play-a-game.jfif', 'Play a Game', newHandSet[index+1]);
   }
 
 }
@@ -50,7 +78,7 @@ new HandItems('../img/hand/take-a-walk.png', 'Take a Walk', 'It\'s good to get o
 new HandItems('../img/hand/two-cups.jpg', 'Share a Cup', 'It\'s alway nice to get a cup of tea or coffee with a friend. Offer your time to share a warm drink and companionship with someone. This is a low activity, allow thirty minutes or more. ');
 new HandItems('../img/hand/pet-a-dog.jpg', 'Pet a Dog', 'Do you have a nice, calm dog that may want some additional pets or treats? It\'s been proven that petting an animal has calming effects on humans. If you\'re willing to share your canine companion, there is guaranteed to be someone wanting their soft attention.');
 new HandItems('../img/hand/play-a-game.jfif', 'Play a Game', 'Who doesn\'t like a little friendly competition? Whether it\'s scrabble, chess, or hearts, a game always brings a little lively challenge to someone\'s day. This is a low activity, allow an hour or more.');
-// need  more images and descriptions
+
 
 
 

@@ -83,6 +83,20 @@ function addNewHand(){
     newHandItem .push('groceryShopping', document.getElementById('handDescription').value);
   } else if (checkHandRadio==='readABook') {
     newHandItem .push('readABook', document.getElementById('handDescription').value);
+  }else if (checkHandRadio==='hairCut') {
+    newHandItem .push('hairCut', document.getElementById('handDescription').value);
+  }else if (checkHandRadio==='mowALawn') {
+    newHandItem .push('mowALawn', document.getElementById('handDescription').value);
+  }else if (checkHandRadio==='shovelAWalk') {
+    newHandItem .push('shovelAWalk', document.getElementById('handDescription').value);
+  }else if (checkHandRadio==='takeAWalk') {
+    newHandItem .push('takeAWalk', document.getElementById('handDescription').value);
+  }else if (checkHandRadio==='shareACup') {
+    newHandItem .push('shareACup', document.getElementById('handDescription').value);
+  }else if (checkHandRadio==='petADog') {
+    newHandItem .push('petADog', document.getElementById('handDescription').value);
+  }else if (checkHandRadio==='playAGame') {
+    newHandItem .push('playAGame', document.getElementById('handDescription').value);
   }
 
 
