@@ -6,7 +6,7 @@ console.log ('Hello from the gift js file');
 // respond to a click of the giftImage.
 
 
-
+let newGiftSet = JSON.parse(localStorage.getItem('newGift'))||[];
 let giftClicks = localStorage.getItem('giftCount')||0;
 let handClicks = localStorage.getItem('handCount')||0;
 let giftCartItems = [];
@@ -33,12 +33,45 @@ function GiftItems(imageSrc, giftTitle, giftHoverDescription, click){
   allGiftArray.push(this);
 }
 
+// This will push the new item from the wish list on to the front of the array
+for (let index = 0; index < newGiftSet.length; index+=2) {
+  if(newGiftSet[index]==='toys'){
+    new GiftItems('../img/Gifts/toys.jpg', 'Toys', newGiftSet[index+1]);
+  }
+  else if(newGiftSet[index]==='snowBoots'){
+    new GiftItems('../img/Gifts/boots.jpg', 'Snow Boots', newGiftSet[index+1]);
+  }
+  else if(newGiftSet[index]==='clothing'){
+    new GiftItems('../img/Gifts/clothing.jpg', 'Clothing', newGiftSet[index+1]);
+  }
+  else if(newGiftSet[index]==='coats'){
+    new GiftItems('../img/Gifts/coatsAccessories.jpg', 'Coats', newGiftSet[index+1]);
+  }
+  else if(newGiftSet[index]==='fuelCard'){
+    new GiftItems('../img/Gifts/gas.jpg', 'Fuel Card', newGiftSet[index+1]);
+  }
+  else if(newGiftSet[index]==='childrenBooks'){
+    new GiftItems('../img/Gifts/books.jpg', 'Children\'s Books', newGiftSet[index+1]);
+  }
+  else if(newGiftSet[index]==='groceries'){
+    new GiftItems('../img/Gifts/groceries.jpg', 'Groceries', newGiftSet[index+1]);
+  }
+  else if(newGiftSet[index]==='householdEssentials'){
+    new GiftItems('../img/Gifts/household.jpg', 'Household Essentials', newGiftSet[index+1]);
+  }
+  else if(newGiftSet[index]==='petSupplies'){
+    new GiftItems('../img/Gifts/petSupplies.jpg', 'Pet Supplies', newGiftSet[index+1]);
+  }
+
+}
+
+
 //we need our gift images and descriptions here,
 // new GiftItems('../img/aboutUs/snowmanApron.png', 'This is a description of this gift. What it is. Who it is for. Their age, etc');
 new GiftItems('../img/Gifts/books.jpg', 'Children\'s Books', 'Share the gift of a timeless story and encourage the love of literature.');
 new GiftItems('../img/Gifts/boots.jpg', 'Snow Boots', 'Gift snow boots for the family to keep feet warm and dry this winter. Childrens and adults sizes needed.');
 new GiftItems('../img/Gifts/clothing.jpg', 'Clothing', 'Families have listed clothing as one of their most needed items.');
-new GiftItems('../img/Gifts/coatsAccessories.jpg', 'Coats and Cold Weather Accessories', 'Winters in the midwest can be brutally cold and coats, hats, gloves, and scarves are needed to protect from the elements.');
+new GiftItems('../img/Gifts/coatsAccessories.jpg', 'Coats', 'Winters in the midwest can be brutally cold and coats, hats, gloves, and scarves are needed to protect from the elements.');
 new GiftItems('../img/Gifts/gas.jpg', 'Fuel Card', 'Gas prices hit record highs in 2022 and many people are struggling to afford fuel.');
 new GiftItems('../img/Gifts/groceries.jpg', 'Groceries', 'Inflation and supply chain disruptions have caused many people in our community to become food insecure.');
 new GiftItems('../img/Gifts/household.jpg', 'Household Essentials', 'Things like household cleaner, paper towels, and laundry detergent are always in demand.');
