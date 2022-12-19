@@ -53,18 +53,40 @@ function addNewGift(){
     newGiftItem .push('petSupplies', document.getElementById('description').value);
   }
 
-
-
-
-
-
-
-
-
-
-
   //putting items into local storage to add to the gift page as a new gift
   localStorage.setItem('newGift',JSON.stringify(newGiftItem));
 
+
+}
+
+
+// ******************************Hand JS*****************************
+
+//this is the array that is being sent to the hand page
+let newHandItem = [];
+
+function addNewHand(){
+  let handNeededName = document.getElementById('handUserName').value;
+  let handNeededEmail = document.getElementById('handUserEmail').value;
+
+
+  let handSubmitted = document.getElementById('requestWording');
+
+  handSubmitted.innerHTML=`<h3>Your request has been submitted, <span>${handNeededName}</span></h3>
+    <h3>We will send a confirmation e-mail to <span>${handNeededEmail}</span> shortly.</h3>
+        <h3>Our team will be in contact with you when your request is ready to be fulfilled.</h3>`;
+
+  let checkHandRadio = document.querySelector(
+    'input[name="needAHandCategory"]:checked').value;
+
+  if(checkHandRadio==='groceryShopping') {
+    newHandItem .push('groceryShopping', document.getElementById('handDescription').value);
+  } else if (checkHandRadio==='readABook') {
+    newHandItem .push('readABook', document.getElementById('handDescription').value);
+  }
+
+
+    //putting items into local storage to add to the hand page as a new hand option
+    localStorage.setItem('newHand',JSON.stringify(newHandItem));
 
 }

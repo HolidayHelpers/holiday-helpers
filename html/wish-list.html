@@ -27,7 +27,7 @@
 <br>
 
    
-<form id=toyWrapper action="">
+<form class=wrapper action="">
     <div>
     <input type="radio" name="giftCategory" id="toys" value="toys">
     <label for="toys">Toys</label><br>
@@ -41,7 +41,7 @@
     <label for="fuelCard">Fuel Card</label><br>
 </div>
 <div>
-    <form action="">
+    <!-- <form action=""> -->
 
     <input type="radio" name="giftCategory" id="childrenBooks" value="childrenBooks">
     <label for="childrenBooks">Children's Books</label><br>
@@ -63,7 +63,9 @@
 
     <input type="text" id="description" placeholder="Description of Item"><br>
     <!-- <input type="text" id="snowBootsDescription" placeholder="Description of Item"><br> -->
-  </form>
+
+
+</form>
   <br>
   <p>Please enter your contact information:</p>
   <form id="contactInfo">
@@ -77,22 +79,43 @@
 
                 </section>
 
-
+<!-- ************************************Need a Hand Section************************* -->
                 <section>
                 <h1>Need a Hand</h1> 
                 <p>Please choose a category of service needed</p>
-<form action="">
-    <input type="radio" name="Need a Hand" id="Grocery Shopping" value="Grocery Shopping">
-    <label for="Grocery Shopping">Grocery Shopping</label><br>
-    <input type="radio"  name="Need a Hand" id="Read a Book" value="Read a Book">
-    <label for="Read a Book">Read a Book</label><br>   
+<form class=wrapper action="">
+    <div>
+    <input type="radio" name="needAHandCategory" id="groceryShopping" value="groceryShopping">
+    <label for="groceryShopping">Grocery Shopping</label><br>
+    <input type="radio"  name="needAHandCategory" id="readABook" value="readABook">
+    <label for="readABook">Read a Book</label><br>  
+    <input type="radio"  name="needAHandCategory" id="hairCut" value="hairCut">
+    <label for="hairCut">Hair Cut</label><br>
+    <input type="radio"  name="needAHandCategory" id="mowALawn" value="mowALawn">
+    <label for="mowALawn">Mow a Lawn</label><br>
+    <input type="radio"  name="needAHandCategory" id="shovelAWalk" value="shovelAWalk">
+    <label for="shovelAWalk">Shovel a Walk</label><br>
+    
+    </div>
+
+    <div>
+        <input type="radio"  name="needAHandCategory" id="takeAWalk" value="takeAWalk">
+        <label for="takeAWalk">Take a Walk</label><br>
+        <input type="radio"  name="needAHandCategory" id="shareACup" value="shareACup">
+        <label for="shareACup">Share a Cup</label><br>
+        <input type="radio"  name="needAHandCategory" id="petADog" value="petADog">
+        <label for="petADog">Pet a Dog</label><br>
+        <input type="radio"  name="needAHandCategory" id="playAGame" value="playAGame">
+        <label for="playAGame">Play a Game</label><br>
+    </div>
+</form> 
     <br>
     <br>
     <p>Please provide a brief description of the service requested, including dates and times needed.</p>
     <br>
     <form id="detailForm">
     
-        <input type="text" id="toyDescription" placeholder="Description of Item"><br>
+        <input type="text" id="handDescription" placeholder="Description of Item"><br>
     
       </form>
       <br>
@@ -106,6 +129,7 @@
      <button type="button" class="btn btn-update" onclick= "addNewHand()" value="Submit">Submit Service Requested</button> 
 </section>
 
+<!-- ************************************Submitted Section************************* -->
 
 
     <section class="requestSubmitted">

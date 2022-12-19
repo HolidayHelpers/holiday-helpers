@@ -44,7 +44,7 @@ h1 {
     border-radius: 20px;
 }
 
-#toyWrapper {
+.wrapper {
     display: flex;
     justify-content: space-evenly;
 }

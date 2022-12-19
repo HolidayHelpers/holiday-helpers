@@ -33,6 +33,7 @@ function GiftItems(imageSrc, giftTitle, giftHoverDescription, click){
   allGiftArray.push(this);
 }
 
+// This will push the new item from the wish list on to the front of the array
 for (let index = 0; index < newGiftSet.length; index+=2) {
   if(newGiftSet[index]==='toys'){
     new GiftItems('../img/Gifts/toys.jpg', 'Toys', newGiftSet[index+1]);

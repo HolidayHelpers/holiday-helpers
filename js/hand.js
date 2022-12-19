@@ -5,7 +5,7 @@ console.log ('Hello from the hand js file');
 //  with an event listener to
 // respond to a click of the handImage.
 
-
+let newHandSet= JSON.parse(localStorage.getItem('newHand'))||[];
 let giftClicks = localStorage.getItem('giftCount')||0;
 let handClicks = localStorage.getItem('handCount')||0;
 let handCartItems = []; //localStorage.getItem('handsPledged');
@@ -28,6 +28,16 @@ function HandItems(imageSrc, handTitle, handHoverDescription, click){
     this.click=0;
   }
   allHandArray.push(this);
+}
+
+for (let index = 0; index < newHandSet.length; index+=2) {
+  if(newHandSet[index]==='groceryShopping'){
+    new HandItems('../img/hand/grocery-cart.jpeg', 'Grocery Shopping', newHandSet[index+1]);
+  }
+  else if(newHandSet[index]==='readABook'){
+    new HandItems('../img/hand/guy-reading.jpg', 'Read a Book', newHandSet[index+1]);
+  }
+
 }
 
 //we need our hand images and descriptions here,
