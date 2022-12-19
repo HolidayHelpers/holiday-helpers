@@ -44,6 +44,11 @@ h1 {
     border-radius: 20px;
 }
 
+#toyWrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .requestSubmitted{
     display: flex;
     margin: auto;

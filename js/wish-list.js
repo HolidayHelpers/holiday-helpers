@@ -12,7 +12,7 @@ console.log ('Hello from the need a hand js file');
 
 //this function performs actions when the submit gift request button is pushed
 
-//this is the array that we are sending to the gift page
+//this is the array that is being sent to the gift page
 let newGiftItem = [];
 // let document.getElementById("toys").checked;
 
@@ -32,10 +32,20 @@ function addNewGift(){
   let checkRadio = document.querySelector(
     'input[name="giftCategory"]:checked').value;
 
-    //if then statements for if we get the rest of this working
-  if(checkRadio==="toys") {
-    newGiftItem .push('toys', document.getElementById('toyDescription').value);
+  //if else if statements for when I get the rest of this working
+  if(checkRadio==='toys') {
+    newGiftItem .push('toys', document.getElementById('description').value);
+  } else if (checkRadio==='snowBoots') {
+    newGiftItem .push('snowBoots', document.getElementById('description').value);
   }
+
+
+
+
+
+
+
+
 
 
 
