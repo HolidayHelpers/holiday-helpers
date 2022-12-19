@@ -186,8 +186,14 @@ a:hover{
   }
   
   /* table foot font properties */
-  .tf p {
+  .tf div p {
     color: #fff;
+    font-weight: bold;
+  }
+
+  .tf div {
+    color: #fff;
+    font-size: 1.5em;
     font-weight: bold;
   }
   
