@@ -6,7 +6,7 @@ console.log ('Hello from the gift js file');
 // respond to a click of the giftImage.
 
 
-
+let newGiftSet = JSON.parse(localStorage.getItem('newGift'))||[];
 let giftClicks = localStorage.getItem('giftCount')||0;
 let handClicks = localStorage.getItem('handCount')||0;
 let giftCartItems = [];
@@ -32,7 +32,11 @@ function GiftItems(imageSrc, giftTitle, giftHoverDescription, click){
   }
   allGiftArray.push(this);
 }
-
+for (let index = 0; index < newGiftSet.length; index+=2) {
+  if(newGiftSet[index]==='toys'){
+    new GiftItems('../img/Gifts/toys.jpg', 'Toys', newGiftSet[index+1]);
+  }
+}
 //we need our gift images and descriptions here,
 // new GiftItems('../img/aboutUs/snowmanApron.png', 'This is a description of this gift. What it is. Who it is for. Their age, etc');
 new GiftItems('../img/Gifts/books.jpg', 'Children\'s Books', 'Share the gift of a timeless story and encourage the love of literature.');

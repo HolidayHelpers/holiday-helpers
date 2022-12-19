@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cart</title>
+                <!-- Google Fonts -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Handlee&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+                
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/wish-list.css">
+    </head>
+    <body>
+        <header></header>
+        <main class="secondary">
+
+            <section class="pageWrapper">
+                <section>
+<h1>Need a Gift</h1>
+<p>Choose a category of gift</p>
+<form action="">
+    <input type="radio" name="giftCategory" id="toys" value="toys">
+    <label for="toys">Toys</label><br>
+    <input type="radio" name="Gift Category" id="Children's Books" value="Children's Books">
+    <label for="Children's Books">Children's Books</label><br>
+    <input type="radio" name="Gift Category" id="Snow Boots" value="Snow Boots">
+    <label for="Snow Boots">Snow Boots</label><br>
+    <!-- <input type="radio" name="Gift Category" id="Groceries" value="Groceries">
+    <label for="Groceries">Groceries</label><br>
+    <input type="radio" name="Gift Category" id="Groceries" value="Groceries">
+    <label for="Groceries">Groceries</label><br>
+    <input type="radio" name="Gift Category" id="Groceries" value="Groceries">
+    <label for="Groceries">Groceries</label><br>
+    <input type="radio" name="Gift Category" id="Groceries" value="Groceries">
+    <label for="Groceries">Groceries</label><br>
+    <input type="radio" name="Gift Category" id="Groceries" value="Groceries">
+    <label for="Groceries">Groceries</label><br>
+    <input type="radio" name="Gift Category" id="Groceries" value="Groceries">
+    <label for="Groceries">Groceries</label><br>
+    <input type="radio" name="Gift Category" id="Groceries" value="Groceries">
+    <label for="Groceries">Groceries</label><br> -->
+</form>
+<br>
+<br>
+<p>Please provide a brief description of the gift requested, including size and color if needed.</p>
+<br>
+<form id="detailForm">
+
+    <input type="text" id="toyDescription" placeholder="Description of Item"><br>
+
+  </form>
+  <br>
+  <p>Please enter your contact information:</p>
+  <form id="contactInfo">
+    <br>
+    <input type="text" id="giftUserName" placeholder="Name"><br>
+   <input type="email" id="giftUserEmail" placeholder="Email"><br>
+   <br>
+</form>
+
+  <button type="button" id="giftRequest" class="btn" onclick= "addNewGift()" value="Submit">Submit Gift Request</button> 
+
+                </section>
+
+
+                <section>
+                <h1>Need a Hand</h1> 
+                <p>Please choose a category of service needed</p>
+<form action="">
+    <input type="radio" name="Need a Hand" id="Grocery Shopping" value="Grocery Shopping">
+    <label for="Grocery Shopping">Grocery Shopping</label><br>
+    <input type="radio"  name="Need a Hand" id="Read a Book" value="Read a Book">
+    <label for="Read a Book">Read a Book</label><br>   
+    <br>
+    <br>
+    <p>Please provide a brief description of the service requested, including dates and times needed.</p>
+    <br>
+    <form id="detailForm">
+    
+        <input type="text" id="toyDescription" placeholder="Description of Item"><br>
+    
+      </form>
+      <br>
+      <p>Please enter your contact information:</p>
+      <form id="contactInfo">
+        <br>
+        <input type="text" id="handUserName" placeholder="Name"><br>
+       <input type="email" id="handUserEmail" placeholder="Email"><br>
+       <br>
+    </form>        
+     <button type="button" class="btn btn-update" onclick= "addNewHand()" value="Submit">Submit Service Requested</button> 
+</section>
+
+
+
+    <section class="requestSubmitted">
+        <div id="requestWording">
+            <!-- <h3>Your request has been submitted, <span>Name</span></h3>
+            
+            <h3>We will send a confirmation e-mail to
+            <span> email address</span> shortly.</h3>
+            <h3>Our team will be in contact with you when your request is ready to be fulfilled.</h3> -->
+      
+      </div>
+      <div>
+        <img src="../img/aboutUs/snowmanApron.png" alt="snowman">
+      </div>
+</section>
+
+
+
+
+
+
+        </main>
+        <footer>
+                <ul>
+                    <li><a href="../index.html"> Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="wish-list.html">Wish List</a></li>
+                    <li><a href="gift.html">Give a gift</a></li>
+                    <li><a href="hand.html">Lend a Hand</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+    
+                </ul>
+            </footer>
+      
+        
+        <script src="../js/wish-list.js" async defer></script>
+    </body>
+</html>
