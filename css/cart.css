@@ -116,7 +116,7 @@ a:hover{
 
 }
 
-/* *********************************Items Pledged ************************************* */
+/* *********************************Items Pledged Cart************************************* */
 
   
   * {
@@ -277,6 +277,20 @@ a:hover{
     margin: 0 0 1.5em 0;
   } 
 
+  .mailingList {
+    color: #43ace3;
+    text-align: center;
+    margin-top: 10px;
+}
+.mailingList input {
+  border: 0.3em solid #bbc3c6;
+  padding: 0.5em 0.3em; 
+  font-size: 1.4em;
+  color: #8a8a8a;
+  text-align: center;
+  width: 10em;
+}
+
 /* *********************************Bar Chart ************************************* */
 .barChart caption {
 	font:bold 150%/120% arial,helvetica,sans-serif;
@@ -410,10 +424,7 @@ a:hover{
 			opacity:1;
 		}
 /* *********************************Mailing List ************************************* */
-.mailingList {
-  color: #43ace3;
-  text-align: center;
-}
+
 #thanksWording{
   display: flex;
   margin: auto;
