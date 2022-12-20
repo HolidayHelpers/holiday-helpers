@@ -8,7 +8,7 @@ Kati Lee
 Eva Grace Smith
 
 
-(https://files.slack.com/files-pri/T3F4FFV5F-F04FCBY7QBA/hh-wireframe-domainmodel.png)[wireframe and domain model]
+(../img/HH-Wireframe-DomainModel.png) wireframe and domain model
 
 
 ## User Stories
