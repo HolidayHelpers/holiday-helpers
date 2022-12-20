@@ -7,8 +7,9 @@ Leah Wilner
 Kati Lee
 Eva Grace Smith
 
+![Wireframe and domain model](img/HH-Wireframe-DomainModel.png)
 
-(../img/HH-Wireframe-DomainModel.png) wireframe and domain model
+![Tree File Structure](img/File-Structure.png)
 
 
 ## User Stories
@@ -39,7 +40,6 @@ Eva Grace Smith
 - As an organization, I’d like to see the percent of people “matched” or needs fulfilled
 - As an organization, I’d like to a visual representation of the status of needs available and needs met
 
-Link to ![Wireframe and Domain Modeling Image](HolidayHelpers.drawio).
 
 
 Photo credits:  
