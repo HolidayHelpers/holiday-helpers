@@ -108,7 +108,6 @@ a:hover{
 }
 .navCartContainer div{
     background-color: white;
-    /* margin-top: 5px; */
     margin-left: 1em;
     padding: 10px;
     border-radius: 20px;
@@ -252,7 +251,6 @@ a:hover{
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
-    /* margin-left: .2em; */
     padding-left: .3em;
     padding-right: .4em;
     background: #43ace3;  
@@ -415,8 +413,6 @@ a:hover{
 			padding:0.5em 0;
 			margin:-1em 0 0;
 			font:normal 85%/120% arial,helvetica,sans-serif;
-/* 			background:white; */
-/* 			box-shadow:0 0 0.25em rgba(0,0,0,0.6); */
 			font-weight:bold;
 			opacity:0;
 			transition:opacity 0.5s;

@@ -112,7 +112,7 @@ ul{
 li{
     font-family: 'Handlee', cursive;
     font-size: 2em;
-padding: 1em;
+    padding: 1em;
 }
 
 a{
@@ -136,12 +136,10 @@ a:hover{
 }
 .navCartContainer div{
     background-color: white;
-    /* margin-top: 5px; */
     margin-left: 1em;
     padding: 10px;
     border-radius: 20px;
     color: rgb(20, 83, 141);
-    /* box-shadow: 1px 1px 5px 2px black; */
 
 }
 /* **********************GIFT and HAND*********************** */
@@ -151,8 +149,8 @@ a:hover{
 #giftPhotos div, #handPhotos div{
     position: relative;
     display: inline-grid;
-     background-color: white;
-     max-height: 15em;
+    background-color: white;
+    max-height: 15em;
     max-width: 15em;
     overflow-wrap: break-word;
     margin: 1em;
@@ -201,17 +199,6 @@ a:hover{
   img.show:hover + div.tooltip {
     opacity:1;
   }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -279,6 +266,6 @@ a:hover{
 
 
 .snowWoman div img{
-        height: 15vh;
-        padding: 10px;
+    height: 15vh;
+    padding: 10px;
 }
