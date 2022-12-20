@@ -62,17 +62,7 @@ h2{
    padding-bottom: 200px;
     }
 
-  /* .tooltip {
-    position: absolute;
-    opacity: 0;
-    background-color: #fff;
-    padding: .5em;
-    min-width: 10rem;
-  }
-  
-  img.show:hover + div.tooltip {
-    opacity:1;
-  } */
+
 
 
 
@@ -98,7 +88,7 @@ ul{
 li{
     font-family: 'Handlee', cursive;
     font-size: 2em;
-padding: 1em;
+    padding: 1em;
 }
 
 a{
@@ -122,24 +112,19 @@ a:hover{
 }
 .navCartContainer div{
     background-color: white;
-    /* margin-top: 5px; */
     margin-left: 1em;
     padding: 10px;
     border-radius: 20px;
     color: rgb(20, 83, 141);
-    /* box-shadow: 1px 1px 5px 2px black; */
 
 }
 
 /* ********************** Snowflake Animation *********************** */
 
 
-body{
-    /* background:red; */
-  }
-  .intro,
-  .intro a{
-    color:#fff;
+
+  .intro, .intro a{
+     color:#fff;
   }
   /* customizable snowflake styling */
   .snowflake {
