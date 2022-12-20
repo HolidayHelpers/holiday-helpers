@@ -10,6 +10,17 @@ body{
 }
 
 h1 {
+    font-family: 'Corinthia', cursive;
+    text-align: center;
+    padding-top: 1%;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 1%;
+  color: rgb(20, 83, 141);
+  text-shadow: 2px 2px 3px rgb(138, 138, 138);
+}
+
+h2 {
     font-family: 'Handlee', cursive;
     font-size: 3em;
     text-align: center;
@@ -58,6 +69,7 @@ p, input, label, button {
     margin: auto;
     flex-direction: column;
     text-align:center ;
+    justify-content: center;
 }
 .requestSubmitted div img{
     max-width: 7em;
@@ -67,17 +79,18 @@ p, input, label, button {
   }
 
   button{
-    background-color: rgb(20, 83, 141);
+    background-color: #43ace3;;
     color: white;
     margin-left: 25%;
     font-size: 1em;
     padding: .5em;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px 1px rgb(134, 133, 133);
+    transition: background 100ms ease;
+    box-shadow: 2px 2px 3px rgb(138, 138, 138);
   }
 
   button:hover{
-    background-color: rgb(80, 137, 190);;
+    background-color: rgb(80, 137, 190);
   }
   h3{
     font-family: 'Roboto', sans-serif;

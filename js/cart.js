@@ -4,8 +4,8 @@ console.log ('Hello from the cart js file');
 
 // There are three things happening in this file:
 // 1.) We are receiving the data from the gift and hand files and
-//     compiling them into a shopping cart . (This was done in lab 14)
-// 2.)We are creating a Chart.js to show the percentage(or number) of gifts/hands
+//     compiling them into a "shopping cart."
+// 2.)We are creating a chart to show the percentage(or number) of gifts/hands
 //     promised, versus still available. (Ie, number of people reached, etc.)
 // 3.) We are taking user input.
 //         Name
@@ -41,7 +41,6 @@ for(let i=0; i < cartItems.length; i++){
   let cartItemImgSrc = cartItems[i];i++;
   let cartItemTitle = cartItems[i];
   let htmlDiv = document.createElement('div');
-  // itemCount[i]=1;
   totalCount++;
   // exact html put into a template literal, may need to change to a button to make work,
   // and add event listeners. (buttons replace hrefs)
@@ -89,9 +88,6 @@ function plusItemFromCart(event){
 
 
 
-
-
-
 // Chart update, calculate new percentages
 function updateChart(){
   let giftClicks = Number(localStorage.getItem('giftsToBePledged')||0) +10;
@@ -101,7 +97,7 @@ function updateChart(){
   if (giftPercentage >= 100){
     giftPercentage=100;
   }
-  
+
   let handPercentage = Math.floor(handClicks/20*100);
   if (handPercentage >= 100){
     handPercentage=100;
@@ -121,6 +117,8 @@ function updateChart(){
 
 updateChart();
 
+//This function is called within the HTML
+// eslint-disable-next-line no-unused-vars
 function myFunction() {
 // this is getting data from the user form
   let formName = document.getElementById('userName').value;

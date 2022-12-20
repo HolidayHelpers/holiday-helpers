@@ -5,11 +5,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cart</title>
-                <!-- Google Fonts -->
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Handlee&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-                
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Corinthia&family=Handlee&family=Roboto:wght@400;900&display=swap"
+            rel="stylesheet">
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/reset.css">
@@ -21,140 +26,184 @@
 
             <section class="pageWrapper">
                 <section>
-                <h1>Need a Gift</h1>
-                <br>
-                <p>Please choose a gift category</p>
-                <br>
-
-   
-        <form class=wrapper action="">
-            <div>
-                <input type="radio" name="giftCategory" id="toys" value="toys">
-                <label for="toys">Toys</label><br>
-                <input type="radio" name="giftCategory" id="snowBoots" value="snowBoots">
-                <label for="snowBoots">Snow Boots</label><br>
-                <input type="radio" name="giftCategory" id="clothing" value="clothing">
-                <label for="clothing">Clothing</label><br>
-                <input type="radio" name="giftCategory" id="coats" value="coats">
-                <label for="coats">Coats</label><br>
-                <input type="radio" name="giftCategory" id="fuelCard" value="fuelCard">
-                <label for="fuelCard">Fuel Card</label><br>
-            </div>
-
-            <div>
-                <input type="radio" name="giftCategory" id="childrenBooks" value="childrenBooks">
-                <label for="childrenBooks">Children's Books</label><br>
-                <input type="radio" name="giftCategory" id="groceries" value="groceries">
-                <label for="groceries">Groceries</label><br>
-                <input type="radio" name="giftCategory" id="householdEssentials" value="householdEssentials">
-                <label for="householdEssentials">Household Essentials</label><br>
-                <input type="radio" name="giftCategory" id="petSupplies" value="petSupplies">
-                <label for="petSupplies">Pet Supplies</label><br>
-            </div>
-            </form>
-
-                <br>
-                <br>
-                <p>Please provide a brief description of the gift requested, including size and color if needed.</p>
-                <br>
-                <form id="detailForm">
-
-                 <input type="text" id="description" placeholder="Description of Item"><br>
-
-                </form>
-                <br>
-                <p>Please enter your contact information:</p>
-                <form id="contactInfo">
+                    <h2>Need a Gift</h2>
                     <br>
-                    <input type="text" id="giftUserName" placeholder="Name"><br>
-                <input type="email" id="giftUserEmail" placeholder="Email"><br>
-                <br>
-                </form>
+                    <p>Please choose a gift category</p>
+                    <br>
 
-                    <button type="button" id="giftRequest" class="btn" onclick= "addNewGift()" value="Submit">Submit Gift Request</button> 
+                    <form class="wrapper" action="">
+                        <div>
+                            <input type="radio" name="giftCategory" id="toys" value="toys">
+                            <label for="toys">Toys</label><br>
+                            <input type="radio" name="giftCategory" id="snowBoots" value="snowBoots">
+                            <label for="snowBoots">Snow Boots</label><br>
+                            <input type="radio" name="giftCategory" id="clothing" value="clothing">
+                            <label for="clothing">Clothing</label><br>
+                            <input type="radio" name="giftCategory" id="coats" value="coats">
+                            <label for="coats">Coats</label><br>
+                            <input type="radio" name="giftCategory" id="fuelCard" value="fuelCard">
+                            <label for="fuelCard">Fuel Card</label><br>
+                        </div>
+
+                        <div>
+                            <input
+                                type="radio"
+                                name="giftCategory"
+                                id="childrenBooks"
+                                value="childrenBooks">
+                            <label for="childrenBooks">Children's Books</label><br>
+                            <input type="radio" name="giftCategory" id="groceries" value="groceries">
+                            <label for="groceries">Groceries</label><br>
+                            <input
+                                type="radio"
+                                name="giftCategory"
+                                id="householdEssentials"
+                                value="householdEssentials">
+                            <label for="householdEssentials">Household Essentials</label><br>
+                            <input type="radio" name="giftCategory" id="petSupplies" value="petSupplies">
+                            <label for="petSupplies">Pet Supplies</label><br>
+                        </div>
+                    </form>
+
+                    <br>
+                    <br>
+                    <p>Please provide a brief description of the gift requested, including size and
+                        color if needed.</p>
+                    <br>
+                    <form id="detailForm">
+
+                        <input type="text" id="description" placeholder="Description of Item"><br>
+
+                    </form>
+                    <br>
+                    <p>Please enter your contact information:</p>
+                    <form id="contactInfo">
+                        <br>
+                        <input type="text" id="giftUserName" placeholder="Name"><br>
+                        <input type="email" id="giftUserEmail" placeholder="Email"><br>
+                        <br>
+                    </form>
+
+                    <button
+                        type="button"
+                        id="giftRequest"
+                        class="btn"
+                        onclick="addNewGift()"
+                        value="Submit">Submit Gift Request</button>
 
                 </section>
+                <!-- ************************************Submitted Section************************* -->
 
-<!-- ************************************Need a Hand Section************************* -->
+                <section class="requestSubmitted">
+                    <p>Let us help bring cheer to your holiday!</p>
+                    <br>
+                    <p>Please enter your requests in the forms provided here.</p>
+                    <br>
+                    <div>
+                        <br>
+                        <img src="../img/aboutUs/snowmanApron.png" alt="snowman">
+                    </div>
+                    <div id="requestWording">
+                        <br>
+
+                        <br>
+                    </div>
+                    <div>
+                        <br>
+                        <h1>Happy Holidays!</h1>
+                    </div>
+                </section>
+                <!-- ************************************Need a Hand Section************************* -->
                 <section>
-                    <h1>Need a Hand</h1> 
-                        <br>
-                        <p>Please choose a service needed</p>
-                        <br>
-                    <form class=wrapper action="">
+                    <h2>Need a Hand</h2>
+                    <br>
+                    <p>Please choose a service needed</p>
+                    <br>
+                    <form class="wrapper" action="">
                         <div>
-                            <input type="radio" name="needAHandCategory" id="groceryShopping" value="groceryShopping">
+                            <input
+                                type="radio"
+                                name="needAHandCategory"
+                                id="groceryShopping"
+                                value="groceryShopping">
                             <label for="groceryShopping">Grocery Shopping</label><br>
-                            <input type="radio"  name="needAHandCategory" id="readABook" value="readABook">
-                            <label for="readABook">Read a Book</label><br>  
-                            <input type="radio"  name="needAHandCategory" id="hairCut" value="hairCut">
+                            <input type="radio" name="needAHandCategory" id="readABook" value="readABook">
+                            <label for="readABook">Read a Book</label><br>
+                            <input type="radio" name="needAHandCategory" id="hairCut" value="hairCut">
                             <label for="hairCut">Hair Cut</label><br>
-                            <input type="radio"  name="needAHandCategory" id="mowALawn" value="mowALawn">
+                            <input type="radio" name="needAHandCategory" id="mowALawn" value="mowALawn">
                             <label for="mowALawn">Mow a Lawn</label><br>
-                            <input type="radio"  name="needAHandCategory" id="shovelAWalk" value="shovelAWalk">
-                            <label for="shovelAWalk">Shovel a Walk</label><br>                   
-                         </div>
+                            <input
+                                type="radio"
+                                name="needAHandCategory"
+                                id="shovelAWalk"
+                                value="shovelAWalk">
+                            <label for="shovelAWalk">Shovel a Walk</label><br>
+                        </div>
 
                         <div>
-                            <input type="radio"  name="needAHandCategory" id="takeAWalk" value="takeAWalk">
+                            <input type="radio" name="needAHandCategory" id="takeAWalk" value="takeAWalk">
                             <label for="takeAWalk">Take a Walk</label><br>
-                            <input type="radio"  name="needAHandCategory" id="shareACup" value="shareACup">
+                            <input type="radio" name="needAHandCategory" id="shareACup" value="shareACup">
                             <label for="shareACup">Share a Cup</label><br>
-                            <input type="radio"  name="needAHandCategory" id="petADog" value="petADog">
+                            <input type="radio" name="needAHandCategory" id="petADog" value="petADog">
                             <label for="petADog">Pet a Dog</label><br>
-                            <input type="radio"  name="needAHandCategory" id="playAGame" value="playAGame">
+                            <input type="radio" name="needAHandCategory" id="playAGame" value="playAGame">
                             <label for="playAGame">Play a Game</label><br>
                         </div>
-                    </form> 
+                    </form>
+                    <br>
+                    <br>
+                    <p>Please provide a brief description of the service requested, including dates
+                        and times needed.</p>
+                    <br>
+                    <form id="detailForm">
+
+                        <input type="text" id="handDescription" placeholder="Description of Item"><br>
+
+                    </form>
+                    <br>
+                    <p>Please enter your contact information:</p>
+                    <form id="contactInfo">
+                        <br>
+                        <input type="text" id="handUserName" placeholder="Name">
+                        <br>
+                        <input type="email" id="handUserEmail" placeholder="Email">
                         <br>
                         <br>
-                        <p>Please provide a brief description of the service requested, including dates and times needed.</p>
-                        <br>
-                            <form id="detailForm">
-    
-                                <input type="text" id="handDescription" placeholder="Description of Item"><br>
-    
-                            </form>
-                        <br>
-                        <p>Please enter your contact information:</p>
-                        <form id="contactInfo">
-                            <br>
-                                <input type="text" id="handUserName" placeholder="Name">
-                                <br>
-                                 <input type="email" id="handUserEmail" placeholder="Email">
-                                 <br>
-                           <br>
-                        </form>        
-                        <button type="button" class="btn btn-update" onclick= "addNewHand()" value="Submit">Submit Service Requested</button> 
-                    </section>
+                    </form>
+                    <button
+                        type="button"
+                        class="btn btn-update"
+                        onclick="addNewHand()"
+                        value="Submit">Submit Service Requested</button>
+                </section>
 
-<!-- ************************************Submitted Section************************* -->
-
-
-    <section class="requestSubmitted">
-        <div id="requestWording">
-              <br>
-               <br>
-        </div>
-        <div>
-             <br>
-                <img src="../img/aboutUs/snowmanApron.png" alt="snowman">
-         </div>
-         </section>
-
-        </main>
+            </main>
             <footer>
                 <ul>
-                    <li><a href="../index.html"> Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="wish-list.html">Wish List</a></li>
-                    <li><a href="gift.html">Give a Gift</a></li>
-                    <li><a href="hand.html">Lend a Hand</a></li>
-                    <li><a href="cart.html">Cart</a></li> 
+                    <li>
+                        <a href="../index.html">
+                            Home</a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="wish-list.html">Wish List</a>
+                    </li>
+                    <li>
+                        <a href="gift.html">Give a Gift</a>
+                    </li>
+                    <li>
+                        <a href="hand.html">Lend a Hand</a>
+                    </li>
+                    <li>
+                        <a href="cart.html">Cart</a>
+                    </li>
                 </ul>
             </footer>
-      
-        
-        <script src="../js/wish-list.js" async defer></script>
-    </body>
-</html>
+
+            <script src="../js/wish-list.js" async="async" defer="defer"></script>
+        </body>
+    </html>

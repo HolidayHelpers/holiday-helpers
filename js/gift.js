@@ -2,10 +2,6 @@
 console.log ('Hello from the gift js file');
 
 
-//  with an event listener to
-// respond to a click of the giftImage.
-
-
 let newGiftSet = JSON.parse(localStorage.getItem('newGift'))||[];
 let giftClicks = localStorage.getItem('giftCount')||0;
 let handClicks = localStorage.getItem('handCount')||0;
@@ -67,7 +63,6 @@ for (let index = 0; index < newGiftSet.length; index+=2) {
 
 
 //we need our gift images and descriptions here,
-// new GiftItems('../img/aboutUs/snowmanApron.png', 'This is a description of this gift. What it is. Who it is for. Their age, etc');
 new GiftItems('../img/Gifts/books.jpg', 'Children\'s Books', 'Share the gift of a timeless story and encourage the love of literature.');
 new GiftItems('../img/Gifts/boots.jpg', 'Snow Boots', 'Gift snow boots for the family to keep feet warm and dry this winter. Childrens and adults sizes needed.');
 new GiftItems('../img/Gifts/clothing.jpg', 'Clothing', 'Families have listed clothing as one of their most needed items.');
@@ -78,7 +73,6 @@ new GiftItems('../img/Gifts/household.jpg', 'Household Essentials', 'Things like
 new GiftItems('../img/Gifts/petSupplies.jpg', 'Pet Supplies', 'Furry friends are also in need this holiday season. Help with pet food, treats, and toys.');
 new GiftItems('../img/Gifts/toys.jpg', 'Toys', 'Give a child a new toy to make the holidays special! Toys are needed for all ages.');
 
-// need  more images and descriptions
 
 
 
