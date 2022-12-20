@@ -5,11 +5,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cart</title>
-                <!-- Google Fonts -->
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Handlee&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-                
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Corinthia&family=Handlee&family=Roboto:wght@400;900&display=swap"
+            rel="stylesheet">
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/reset.css">
@@ -22,100 +27,116 @@
             <!-- <h2>Thank You!</h2> -->
 
             <section class="pageWrapper">
-<!-- /* *********************************Bar Chart ************************************* */ -->
+                <!-- /* *********************************Bar Chart
+                ************************************* */ -->
 
                 <section>
-                  <div>
-                    <table class="barChart">
-                      <caption>Giving Goal Progress</caption>
-                      <thead>
-                        <tr>
-                          <th scope="col">Item</th>
-                          <th scope="col">Percent</th>
-                        </tr>
-                      </thead><tbody>
-                        <tr id ="giftPercentageStyle" style="height:85%">
-                          <th scope="row">Give a Gift</th>
-                          <td><span id="giftPercentage">85%</span></td>
-                        </tr>
-                        <tr id ="handPercentageStyle" style="height:23%">
-                          <th scope="row">Lend a Hand</th>
-                          <td><span id="handPercentage">23%</span></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                    <div>
+                        <table class="barChart">
+                            <caption>Giving Goal Progress</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Percent</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="giftPercentageStyle" style="height:85%">
+                                    <th scope="row">Give a Gift</th>
+                                    <td>
+                                        <span id="giftPercentage">85%</span></td>
+                                </tr>
+                                <tr id="handPercentageStyle" style="height:23%">
+                                    <th scope="row">Lend a Hand</th>
+                                    <td>
+                                        <span id="handPercentage">23%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
 
+                <!-- /* *********************************Shopping Cart
+                ************************************* */ -->
 
+                <section id="shopping_cart">
 
-<!-- /* *********************************Shopping Cart ************************************* */ -->
-
-            <section id="shopping_cart"> 
-                          
-                <div id="table">       
-                    <div id="tableHead" class="layout-inline row th">
-                      <span id="pledges" class="col col-pro">Pledges</span>
-                      <span id="thDescription" class="align-center">Description</span>
-                      <span id="thQty" class="col col-qty align-center">QTY</span>
-                    </div>                    
-                    <div id = "cartStart" class="layout-inline row">     
-                    </div>                   
-                      <div class="tf">
-                        <div class="row layout-inline ">
-                          <span>
-                            <p>Total&nbsp;&nbsp;&nbsp;</p>
-                            <div id="cartTotal">0 <span>&nbsp;&nbsp;</span></div>
-                          </span>
+                    <div id="table">
+                        <div id="tableHead" class="layout-inline row th">
+                            <span id="pledges" class="col col-pro">Pledges</span>
+                            <span id="thDescription" class="align-center">Description</span>
+                            <span id="thQty" class="col col-qty align-center">QTY</span>
                         </div>
-                      </div>
-                </div>  
+                        <div id="cartStart" class="layout-inline row"></div>
+                        <div class="tf">
+                            <div class="row layout-inline ">
+                                <span>
+                                    <p>Total&nbsp;&nbsp;&nbsp;</p>
+                                    <div id="cartTotal">0
+                                        <span>&nbsp;&nbsp;</span></div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="mailingList">
-                      <br>
-                      <p>Please enter contact information to commit your pledge.</p>
-                      <br>
-                      <form id="contactInfo">
-                         <input type="text" id="userName" placeholder="Name"><br>
-                          <input type="email" id="userEmail" placeholder="Email"><br>
-                      <br>
-                      <button type="button" class="btn btn-update" onclick= "myFunction()" value="Submit">Submit Pledge</button>
+                        <br>
+                        <p>Please enter contact information to commit your pledge.</p>
+                        <br>
+                        <form id="contactInfo">
+                            <input type="text" id="userName" placeholder="Name"><br>
+                            <input type="email" id="userEmail" placeholder="Email"><br>
+                            <br>
+                            <button
+                                type="button"
+                                class="btn btn-update"
+                                onclick="myFunction()"
+                                value="Submit">Submit Pledge</button>
 
-                      </form>
-                    </div>  
+                        </form>
+                    </div>
 
-             </section>
-<!-- /* *********************************Mailing List ************************************* */ -->
+                </section>
+                <!-- /* *********************************Mailing List
+                ************************************* */ -->
 
+                <section class="thankYou">
+                    <div id="thanksWording"></div>
+                    <div>
+                        <img src="../img/aboutUs/snowmanApron.png" alt="snowman">
+                    </div>
+                    <div>
+                        <br>
+                        <h1>Happy Holidays!</h1>
+                        <br>
+                    </div>
+                </section>
 
-          <section class="thankYou">
-            <div id="thanksWording">
+            </main>
 
-            </div>
-            <div>
-              <img src="../img/aboutUs/snowmanApron.png" alt="snowman">
-            </div>
-            <div>
-              <br>
-              <h1>Happy Holidays!</h1>
-              <br>
-          </div>
-          </section>
+            <footer>
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            Home</a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="wish-list.html">Wish List</a>
+                    </li>
+                    <li>
+                        <a href="gift.html">Give a Gift</a>
+                    </li>
+                    <li>
+                        <a href="hand.html">Lend a Hand</a>
+                    </li>
+                    <li>
+                        <a href="cart.html">Cart</a>
+                    </li>
+                </ul>
+            </footer>
 
-        
-        </main>
-        
-        <footer>
-            <ul>
-                <li><a href="../index.html"> Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="wish-list.html">Wish List</a></li>
-                <li><a href="gift.html">Give a Gift</a></li>
-                <li><a href="hand.html">Lend a Hand</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-        </footer>
-
-        
-        <script src="../js/cart.js" async defer></script>
-    </body>
-</html>
+            <script src="../js/cart.js" async="async" defer="defer"></script>
+        </body>
+    </html>
