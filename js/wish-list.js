@@ -14,15 +14,11 @@ console.log ('Hello from the need a hand js file');
 
 //this is the array that is being sent to the gift page
 let newGiftItem = [];
-// let document.getElementById("toys").checked;
-
 
 function addNewGift(){
   //this is getting date from the user form
   let giftNeededName = document.getElementById('giftUserName').value;
   let giftNeededEmail = document.getElementById('giftUserEmail').value;
-
-
   let giftSubmitted = document.getElementById('requestWording');
 
   giftSubmitted.innerHTML=`<h3>Your request has been submitted, <span>${giftNeededName}</span></h3>
@@ -32,7 +28,7 @@ function addNewGift(){
   let checkRadio = document.querySelector(
     'input[name="giftCategory"]:checked').value;
 
-  //if else if statements for when I get the rest of this working
+  //if else if statements (can make unique description for each item if have time)
   if(checkRadio==='toys') {
     newGiftItem .push('toys', document.getElementById('description').value);
   } else if (checkRadio==='snowBoots') {

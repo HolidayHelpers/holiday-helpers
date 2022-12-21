@@ -2,13 +2,11 @@
 console.log ('Hello from the hand js file');
 
 
-//  with an event listener to
-// respond to a click of the handImage.
 
 let newHandSet= JSON.parse(localStorage.getItem('newHand'))||[];
 let giftClicks = localStorage.getItem('giftCount')||0;
 let handClicks = localStorage.getItem('handCount')||0;
-let handCartItems = []; //localStorage.getItem('handsPledged');
+let handCartItems = [];
 // create array
 let allHandArray= [];
 let handSection = document.getElementById ('handPhotos');
@@ -86,7 +84,6 @@ function renderHands(){
   for (let i=0; i < allHandArray.length; i++){
 
     let htmlDiv = document.createElement('div');
-    // htmlDiv.className='tooltip-wrap';
 
     let htmlImage = document.createElement('img');
     htmlImage.className='show';
