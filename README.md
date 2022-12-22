@@ -7,7 +7,7 @@ Leah Wilner
 Kati Lee
 Eva Grace Smith
 
-![Wireframe and domain model](img/HH-Wireframe-DomainModel.png)
+![Wireframe and domain model](img/UpdatedWireframe:Domain.png)
 
 ![Tree File Structure](img/File-Structure.png)
 
