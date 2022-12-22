@@ -228,6 +228,7 @@ img.show:hover + div.tooltip {
 .snow_tooltip {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     position: absolute;
     top: 10vh;
     left: 25vw;
